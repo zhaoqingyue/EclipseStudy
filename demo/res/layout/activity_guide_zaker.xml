@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome_03" >
+
+        <TextView
+            android:id="@+id/id_guide_zaker_one"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="96dp"
+            android:gravity="center_horizontal"
+            android:text="@string/guide_item0_one"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.zhaoqy.app.demo.guide.PullDoorView
+        android:id="@+id/id_guide_zaker_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd" >
+
+        <TextView
+            android:id="@+id/id_guide_zaker_two"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="96dp"
+            android:gravity="center_horizontal"
+            android:text="@string/guide_item0_two"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_guide_zaker_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/guide_item0_up"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </com.zhaoqy.app.demo.guide.PullDoorView>
+
+    <include layout="@layout/view_title" />
+
+</FrameLayout>

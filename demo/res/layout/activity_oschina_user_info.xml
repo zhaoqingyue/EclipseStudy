@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/user_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            style="@style/oschina_detail_head_title"
+            android:layout_gravity="center"
+            android:text="我的资料" />
+
+        <ImageView
+            android:id="@+id/user_info_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/oschina_head_refresh_selector"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/user_info_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15.0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/user_info_userface"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                    android:background="@drawable/oschina_dface_border_selector"
+                    android:clickable="true"
+                    android:padding="3.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/oschina_dface"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:id="@+id/user_info_gender"
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_alignBottom="@id/user_info_userface"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@id/user_info_userface"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/oschina_gender_man"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/user_info_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/user_info_gender"
+                    android:layout_alignLeft="@id/user_info_gender"
+                    android:layout_marginBottom="10.0dip"
+                    android:textColor="#0e5986"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/user_info_editer"
+                    android:layout_width="65dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_enable_green_selector"
+                    android:text="编辑头像"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_favorites_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/oschina_table_above_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="收藏："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_favorites"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#0e5986"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/icon_right"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_followers_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oschina_table_mid_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="关注："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_followers"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#0e5986"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/icon_right"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_fans_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oschina_table_below_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="粉丝："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_fans"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#0e5986"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/icon_right"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/oschina_table_above_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="加入时间："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_jointime"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oschina_table_mid_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="所在地区："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_from"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oschina_table_mid_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="开发平台："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_devplatform"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oschina_table_below_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:duplicateParentState="true"
+                    android:text="专长领域："
+                    android:textColor="#708090"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_info_expertise"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

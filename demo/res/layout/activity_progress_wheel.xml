@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#999999" >
+
+    <include
+        android:id="@+id/id_progress_title"
+        layout="@layout/view_title" />
+
+    <ScrollView
+        android:id="@+id/id_progress_scollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_progress_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_progress_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/id_progress_spin1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.zhaoqy.app.demo.progress.wheel.ProgressWheel
+                        android:id="@+id/id_progress_spin_wheel1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        ProgressWheel:barColor="#339BB9"
+                        ProgressWheel:barLength="60dp"
+                        ProgressWheel:barWidth="25dp"
+                        ProgressWheel:rimColor="#44000000"
+                        ProgressWheel:rimWidth="25dp"
+                        ProgressWheel:text="0%"
+                        ProgressWheel:textColor="#222222"
+                        ProgressWheel:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_progress_spin_btn1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/progress_spin1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_progress_increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.zhaoqy.app.demo.progress.wheel.ProgressWheel
+                        android:id="@+id/id_progress_increment_wheel"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        ProgressWheel:barColor="#339BB9"
+                        ProgressWheel:barLength="60dp"
+                        ProgressWheel:barWidth="25dp"
+                        ProgressWheel:rimColor="#44000000"
+                        ProgressWheel:rimWidth="25dp"
+                        ProgressWheel:text="0%"
+                        ProgressWheel:textColor="#222222"
+                        ProgressWheel:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_progress_increment_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/progress_increment" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/id_progress_spin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.zhaoqy.app.demo.progress.wheel.ProgressWheel
+                        android:id="@+id/id_progress_spin_wheel2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        ProgressWheel:barColor="#8000"
+                        ProgressWheel:barLength="20dp"
+                        ProgressWheel:barWidth="25dp"
+                        ProgressWheel:circleColor="#2E9121"
+                        ProgressWheel:rimColor="#44000000"
+                        ProgressWheel:rimWidth="25dp"
+                        ProgressWheel:text=""
+                        ProgressWheel:textColor="#222222"
+                        ProgressWheel:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/id_progress_spin_btn2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/progress_spin2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_progress_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="10.0dip" />
+
+                    <ProgressBar
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_horizontal" />
+
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="10.0dip" />
+
+                    <TextView
+                        android:id="@+id/id_progress_default_btn"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="@string/progress_default" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <LinearLayout
+                android:id="@+id/id_progress_custom_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <ProgressBar
+                    android:id="@+id/id_progress_custom_color_progress"
+                    style="@style/progressBarHorizontal_color"
+                    android:layout_width="250dip"
+                    android:layout_height="10dip"
+                    android:indeterminate="true"
+                    android:max="100"
+                    android:progress="0" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <Button
+                    android:id="@+id/id_progress_custom_color_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/progress_custom_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <LinearLayout
+                android:id="@+id/id_progress_left_to_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <ProgressBar
+                    android:id="@+id/id_progress_left_to_right_progress"
+                    style="@style/progressBarHorizontal_left_to_right"
+                    android:layout_width="250dip"
+                    android:layout_height="10dip"
+                    android:max="100"
+                    android:progress="0" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <Button
+                    android:id="@+id/id_progress_left_to_right_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/progress_left_to_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <LinearLayout
+                android:id="@+id/id_progress_right_to_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <ProgressBar
+                    android:id="@+id/id_progress_right_to_left_progress"
+                    style="@style/progressBarHorizontal_right_to_left"
+                    android:layout_width="250dip"
+                    android:layout_height="10dip"
+                    android:max="100"
+                    android:progress="100" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <Button
+                    android:id="@+id/id_progress_right_to_left_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/progress_right_to_left" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <LinearLayout
+                android:id="@+id/id_progress_indeter"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <ProgressBar
+                    android:id="@+id/id_progress_indeter_progress"
+                    style="@style/progressBarHorizontal_indeter"
+                    android:layout_width="250dip"
+                    android:layout_height="10dip"
+                    android:indeterminate="true"
+                    android:max="100"
+                    android:progress="0" />
+
+                <View
+                    android:layout_width="150dp"
+                    android:layout_height="10.0dip" />
+
+                <Button
+                    android:id="@+id/id_progress_indeter_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/progress_indeter" />
+            </LinearLayout>
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <ProgressBar
+                android:id="@+id/progress_volume_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="35dp"
+                android:layout_height="343dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/progress_volume_dn"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/progress_vertical_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

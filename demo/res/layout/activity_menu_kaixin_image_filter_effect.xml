@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/menu_kaixin_image_filter_dot"
+        android:padding="20dip" >
+
+        <ImageView
+            android:id="@+id/imagefilter_effect_display"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_kaixin_image_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="原图"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="Lomo"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="印象派"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="优雅"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="小清新"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="单纯"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="沉静"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="灿烂"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects9"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="旧时光"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imagefilter_effect_effect10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_kaixin_image_filter_banner"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_image_effects10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:text="暖意"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

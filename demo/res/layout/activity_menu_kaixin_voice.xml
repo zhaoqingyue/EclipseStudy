@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/voice_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/voic_display_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:layout_margin="8dip"
+            android:background="@drawable/menu_kaixin_upload_photos_bg_topinput"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/voice_content"
+            android:layout_width="205dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="#手机开心发语音#"
+            android:maxLength="140"
+            android:maxLines="3"
+            android:minHeight="50dip"
+            android:scrollbars="vertical"
+            android:textColor="#ff98bede"
+            android:textColorHint="#ff98bede" />
+
+        <ImageView
+            android:id="@+id/voice_photo"
+            android:layout_width="50dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/voice_display_bottom_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/voic_display_bg"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="-40dip"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/app_name" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/voic_display_bg"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="-40dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/voice_display_bottom_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/menu_kaixin_voice_record_photo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/menu_kaixin_record_separator_line"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:id="@+id/voice_display_bottom_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/menu_kaixin_voice_record_at" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/menu_kaixin_record_separator_line"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:id="@+id/voice_display_bottom_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/menu_kaixin_voice_record_face" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/menu_kaixin_record_separator_line"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:id="@+id/voice_display_bottom_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/menu_kaixin_voice_record_location" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/voice_display_bottom_competence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="2dip"
+                android:background="@null"
+                android:drawableRight="@drawable/menu_kaixin_lbs_lock"
+                android:text="任何人可见"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/voice_display_voice_layout"
+            android:layout_width="205dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/voice_display_bottom_bg"
+            android:layout_marginBottom="65dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/menu_kaixin_voice_player_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/voice_display_voice_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu_kaixin_voice_player_play" />
+
+            <ProgressBar
+                android:id="@+id/voice_display_voice_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dip"
+                android:layout_height="6dip"
+                android:layout_margin="8dip"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/menu_kaixin_voice_record_palyer" />
+
+            <TextView
+                android:id="@+id/voice_display_voice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7″"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/voice_display_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/voice_display_bottom_bg"
+            android:layout_marginBottom="42dip"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/menu_kaixin_location_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:text="半岛港湾酒店(崂山店)"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/voice_record_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/menu_kaixin_voice_record" />
+
+        <RelativeLayout
+            android:id="@+id/voice_record_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/voice_record_btn"
+            android:background="#80000000"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/menu_kaixin_voice_icon_recording" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/menu_kaixin_voice_icon_recordingring"
+                    android:gravity="bottom" >
+
+                    <ImageView
+                        android:id="@+id/voice_recording_volume"
+                        android:layout_width="30dip"
+                        android:layout_height="0dip"
+                        android:background="@drawable/menu_kaixin_voice_icon_recording_volume"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/menu_kaixin_voice_icon_recordingring"
+                    android:contentDescription="@string/app_name" />
+
+                <RelativeLayout
+                    android:id="@+id/voice_recordinglight_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:id="@+id/voice_recordinglight_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/menu_kaixin_voice_icon_recordinglight"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/voice_recordinglight_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/menu_kaixin_voice_icon_recordinglight"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/voice_recordinglight_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/menu_kaixin_voice_icon_recordinglight"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+
+                <TextView
+                    android:id="@+id/voice_record_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="0&apos;&apos;"
+                    android:textColor="#999999" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="60″"
+                    android:textColor="#999999" />
+
+                <ProgressBar
+                    android:id="@+id/voice_record_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="6dip"
+                    android:layout_below="@+id/voice_record_time"
+                    android:max="60"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/menu_kaixin_voice_record_palyer" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

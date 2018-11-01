@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue" >
+
+        <Button
+            android:id="@+id/billnote_blotter_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/billnotes_mybill_add" />
+    </RelativeLayout>
+
+    <!-- 去除下划线 android:divider="@null" -->
+    <ListView
+        android:id="@+id/billnote_blotter_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

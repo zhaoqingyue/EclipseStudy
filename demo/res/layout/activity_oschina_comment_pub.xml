@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_oschina_comment_pub_header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.zhaoqy.app.demo.oschina.view.LinkView
+            android:id="@+id/comment_pub_quote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:autoLink="web|email"
+            android:background="@drawable/oschina_review_bg_blue"
+            android:maxLines="5"
+            android:padding="5.0dip"
+            android:textColor="@color/black"
+            android:textColorLink="#0e5986"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/comment_pub_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="top"
+            android:hint="输入评论"
+            android:lines="5" />
+
+        <CheckBox
+            android:id="@+id/comment_pub_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="3.0dip"
+            android:button="@drawable/oschina_checkbox_selector"
+            android:text="转发到个人空间"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

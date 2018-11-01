@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_oschina_tweet_pub_header" />
+
+    <LinearLayout
+        android:id="@+id/tweet_pub_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/oschina_review_bg_blue"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:visibility="gone" >
+
+        <ProgressBar style="@style/oschina_loading_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="动弹后台发布中···"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tweet_pub_form"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/tweet_pub_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:autoLink="web"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入动弹内容" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_image"
+            android:layout_width="60.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tweet_pub_clearwords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/oschina_clearword"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tweet_pub_numberwords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="160"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/oschina_clearwords_icon" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <include layout="@layout/view_oschina_tweet_pub_footer" />
+
+</LinearLayout>

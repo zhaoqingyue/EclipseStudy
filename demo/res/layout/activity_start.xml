@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我的demo我设计"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:text="qq:1023755730@qq.com"
+        android:textColor="@color/grey"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/id_welcom_img"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/oschina_welcome"
+        android:visibility="gone" />
+
+</RelativeLayout>

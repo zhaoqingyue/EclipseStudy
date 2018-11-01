@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cloud_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/iv_logo"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cloud_menu_user_bg"
+                android:orientation="horizontal"
+                android:padding="20dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cloud_menu_user_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text="1023755730@qq.com"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:max="100"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/cloud_progressbar_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:text="219M / 7.4G"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_backup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_backup"
+                    android:text="自动备份照片"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_transfer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_transfer"
+                    android:text="传输管理"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_history"
+                    android:text="查看最近操作"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_connect" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_connect"
+                    android:text="发送文件到电脑"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_reward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_reward"
+                    android:text="免费抽空间"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_setting"
+                    android:text="设置"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/cloud_menu_item_bg"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cloud_menu_icon_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_logout"
+                    android:text="退出登录"
+                    android:textColor="#ff3b3b3b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

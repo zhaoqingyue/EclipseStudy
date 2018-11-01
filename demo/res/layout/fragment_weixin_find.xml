@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weixin_find_moments"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_moments"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_moments"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_scan"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_saoyisao"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_scan"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_shake"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_yao"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_shake"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_nearby"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_nearby"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_people_nearby"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_drift"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_ping"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_drift_bottle"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_shop"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_shop"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_shopping"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/weixin_find_game"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_find_game"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/weixin_find_games"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

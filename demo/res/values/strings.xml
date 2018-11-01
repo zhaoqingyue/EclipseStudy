@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome_text1">微信，不只是个聊天工具</string>
+    <string name="welcome_text2">微信，已经成为我们生活的一部分</string>
+    <string name="welcome_start">开始我的微信生活</string>
+    
+    <string name="main_item0">账号</string>
+    <string name="main_item1">微信</string>
+    <string name="main_item2">开源中国</string>
+    <string name="main_item3">引导界面</string>
+    <string name="main_item4">页面滑动</string>
+    <string name="main_item5">菜单侧滑</string>
+    <string name="main_item6">动画效果</string>
+    <string name="main_item7">通知栏</string>
+    <string name="main_item8">Dialog</string>
+    <string name="main_item9">ListView</string>
+    <string name="main_item10">WiFi</string>
+    <string name="main_item11">相机</string>
+    <string name="main_item12">图片</string>
+    <string name="main_item13">记事本</string>
+    <string name="main_item14">进度条</string>
+    <string name="main_item15">索引</string>
+    <string name="main_item16">关于</string>
+    <string name="main_item17">TextView</string>
+    
+    <string name="main_exit">退出</string>
+    
+    <string name="login">登 录</string>
+    <string name="login_item0">微信登录</string>
+    <string name="login_item1">QQ登录</string>
+    <string name="login_item2">开心网登录</string>
+    <string name="login_item3">邮箱登录</string>
+    
+    <string name="login_qq_account">输入QQ号码</string>
+    <string name="login_qq_password">输入密码</string>
+    <string name="login_qq_remember_password">记住密码</string>
+    <string name="login_qq_register_new_account">注册新帐号</string>
+    <string name="login_qq_more_login_options">更多登录选项</string>
+    <string name="login_qq_hide_login">隐身登录</string>
+    <string name="login_qq_silence_login">静音登录</string>
+    <string name="login_qq_allow_phone_computer_online">允许手机/电脑同时在线</string>
+    <string name="login_qq_receive_group_messages">接收群消息</string>
+    <string name="login_qq_sending_request">正在发送请求</string>
+    <string name="login_qq_prompt">正在验证帐号…</string>
+    <string name="login_weixin_countries_and_areas">国家和地区</string>
+    <string name="login_weixin_country">中国</string>
+    <string name="login_weixin_num">你的手机号码</string>
+    <string name="login_weixin_num_prefix">+86</string>
+    <string name="login_weixin_password">填写密码</string>
+    <string name="login_weixin_password_prefix">密码</string>
+    <string name="login_weixin_question">登录遇到问题？</string>
+    
+    <string name="register">注 册</string>
+    <string name="register_back">返回</string>
+    <string name="register_qq_register">QQ注册</string>
+    <string name="register_email">*邮箱</string>
+    <string name="register_input_email">请输入邮箱</string>
+    <string name="register_name">*昵称</string>
+    <string name="register_input_name">请输入昵称</string>
+    <string name="register_password">*密码</string>
+    <string name="register_input_password">请输入密码</string>
+    <string name="register_confirm_password">*确认 密码</string>
+    <string name="register_input_password_again">请再次输入密码</string>
+    <string name="register_tip">提示 \n带*项为必填项\n填写邮箱方便您找回密码以及了解更多QQ信息</string>
+    <string name="register_weixin_countries_and_areas">国家和地区</string>
+    <string name="register_weixin_country">中国</string>
+    <string name="register_weixin_num">你的手机号码</string>
+    <string name="register_weixin_num_prefix">+86</string>
+    <string name="register_weixin_password">填写密码</string>
+    <string name="register_weixin_password_prefix">密码</string>
+    <string name="register_weixin_security_code">验证码</string>
+    <string name="register_weixin_input_security_code">输入验证码</string>
+    <string name="register_weixin_send_security_code">发送验证码</string>
+    
+    <string name="pop_cancle">取消</string>
+    <string name="pop_change">注销用户</string>
+    <string name="pop_exit">退出</string>
+    
+    <string name="menu_setting">设置</string>
+    <string name="menu_exit">退出</string>
+    <string name="weixin_chat">微信</string>
+    <string name="weixin_contacts">通讯录</string>
+    <string name="weixin_discover">发现</string>
+    <string name="weixin_me">我</string>
+    <string name="weixin_chat_neterror">当前网络不可用，请检查网络配置</string>
+    <string name="weixin_chat_no_msg">暂时没有新消息</string>
+    <string name="weixin_find_moments">朋友圈</string>
+    <string name="weixin_find_scan">扫一扫</string>
+    <string name="weixin_find_shake">摇一摇</string>
+    <string name="weixin_find_people_nearby">附近的人</string>
+    <string name="weixin_find_drift_bottle">漂流瓶</string>
+    <string name="weixin_find_shopping">购物</string>
+    <string name="weixin_find_games">游戏</string>
+    <string name="weixin_find_bottom">底部滑动导航</string>
+    <string name="weixin_me_chat_id">微信号: 13421812821</string>
+    <string name="weixin_me_post">相册</string>
+    <string name="weixin_me_collection">收藏</string>
+    <string name="weixin_me_wallet">钱包</string>
+    <string name="weixin_me_card_bag">卡包</string>
+    <string name="weixin_me_expression">表情</string>
+    <string name="weixin_me_setting">设置</string>
+    <string name="weixin_menu_groupchat">发起聊天</string>
+    <string name="weixin_menu_addfriend">添加朋友</string>
+    <string name="weixin_menu_qrcode">扫一扫</string>
+    <string name="weixin_menu_money">微信支付</string>
+    <string name="weixin_menu_search">发起群聊</string>
+    <string name="weixin_menu_feedback">意见与反馈</string>
+    
+    <string name="weixin_pushtotalk">按住说话</string>
+    <string name="weixin_send">发送</string>
+    <string name="weixin_move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="weixin_attach_picture">图片</string>
+    <string name="weixin_attach_take_pic">拍照</string>
+    <string name="weixin_attach_location">位置</string>
+    <string name="weixin_attach_file">文件</string>
+    <string name="weixin_attach_voice">语音电话</string>
+    <string name="weixin_attach_video">视频通话</string>
+    <string name="weixin_attach_share0">豆瓣</string>
+    <string name="weixin_attach_share1">开心网</string>
+    <string name="weixin_attach_share2">QQ</string>
+    <string name="weixin_attach_share3">QQ空间</string>
+    <string name="weixin_attach_share4">人人网</string>
+    <string name="weixin_attach_share5">新浪微博</string>
+    <string name="weixin_attach_share6">腾讯微博</string>
+    <string name="weixin_attach_share7">微信</string>
+    <string name="weixin_attach_share8">朋友圈</string>
+    <string name="weixin_attach_share9">米聊</string>
+    
+    <string name="weixin_connected_to_each_other">正在连接对方...</string>
+    
+    
+    <string name="pay_title">微信支付</string>
+    <string name="pay_right_text">设置金额</string>
+    <string name="pay_money">￥188.00</string>
+    <string name="pay_text">扫一扫上面的二维码，向我付钱</string>
+    <string name="mycode_text">扫一扫上面的二维码图案，加我微信</string>
+    <string name="mycode_title">我的二维码</string>
+    <string name="setmoney_pay">付钱</string>
+    <string name="setmoney_success">付款成功!</string>
+    <string name="setmoney_prefix">您正在向</string>
+    <string name="setmoney_account">微信号:</string>
+    <string name="setmoney_suffix">付钱</string>
+    <string name="setting_safe">账号安全</string>
+    <string name="setting_new_msg">新消息通知</string>
+    <string name="setting_yinsi">隐私</string>
+    <string name="setting_tongyong">通用</string>
+    <string name="setting_about">关于微信</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="share_friend_circle">分享朋友圈</string>
+    <string name="share_send">发送</string>
+    <string name="friend_circle">朋友圈</string>
+    <string name="friend_circle_long_press">长按发送文字</string>
+    
+    <string name="scan_tip">请将二维码置于取景框内扫描</string>
+    <string name="scan_picture">相册</string>
+    <string name="scan_flash">闪光</string>
+    <string name="scan_qrcode">二维码</string>
+    <string name="sacn_dialog_title">是否打开链接?</string>
+    <string name="scan_dialog_url">http://www.baidu.com</string>
+    <string name="scan_dialog_cancle">取消</string>
+    <string name="scan_dialog_sure">确定</string>
+    
+    <string name="camera">相机</string>
+    <string name="camera_more">更多</string>
+    <string name="camera_take_picture">拍照</string>
+    <string name="camera_scan">扫描二维码</string>
+    <string name="camera_gallery">相册</string>
+    <string name="camera_modify">修改头像</string>
+    <string name="camera_take_picture_system_photo">调用系统Camera拍照片</string>
+    <string name="camera_take_picture_system_video">调用系统Camera拍视频</string>
+    <string name="camera_take_picture_api_photo">根据系统API拍照片</string>
+    <string name="camera_take_picture_api_video">根据系统API拍视频</string>
+    <string name="camera_cancel">取消</string>
+    <string name="camera_sure">确定</string>
+    <string name="camera_save">保存照片</string>
+    
+    <string name="gallery_system">系统相册</string>
+    <string name="gallery_custom">自定义相册</string>
+    <string name="screenshot_activity">截取当前屏幕</string>
+    
+    <string name="picture_item0">图片轮播</string>
+    <string name="picture_item1">图片圆角1</string>
+    <string name="picture_item2">图片圆角2</string>
+    <string name="picture_item3">图片圆角3</string>
+    <string name="picture_item4">图片翻转</string>
+    <string name="picture_item5">图片处理</string>
+    <string name="picture_item6">二维码</string>
+    <string name="picture_item7">KenBurnsView</string>
+    <string name="picture_item8">CustomShapeImageView</string>
+    <string name="picture_item9">PhotoView</string>
+    <string name="picture_item10">TextDrawable</string>
+    
+    
+    <string name="picture_kenburns_item0">Single image</string>
+    <string name="picture_kenburns_item1">Multiple images</string>
+    <string name="picture_kenburns_item2">From url</string>
+    
+    
+    <string name="picture_circle_start">播放</string>
+    <string name="picture_circle_stop">停止</string>
+    <string name="picture_process_rotate">旋转</string>
+    <string name="picture_process_scale">缩放</string>
+    <string name="picture_process_ｗatermark">水印</string>
+    <string name="picture_process_reset">重置</string>
+    <string name="picture_process_alpha_add">透明+</string>
+    <string name="picture_process_alpha_sub">透明-</string>
+    <string name="picture_process_tilt">倾斜</string>
+    <string name="picture_process_distortion">扭曲</string>
+    
+    <string name="wifi">WiFi</string>
+    <string name="wifi_hot">WiFi热点</string>
+    <string name="wifi_pull_refresh">下拉刷新</string>
+    <string name="wifi_refreshing">正在刷新</string>
+    <string name="wifi_release_refresh">松开刷新</string>
+    <string name="wifi_last_update">上次更新</string>
+    <string name="wifi_recently_update">最近更新: </string>
+    <string name="wifi_signal_strength">信号强度</string>
+    <string name="wifi_security_level">安全性</string>
+    <string name="wifi_password">密码</string>
+    <string name="wifi_show_password">显示密码</string>
+    <string name="wifi_connect">连接</string>
+    <string name="wifi_connected">已连接</string>
+    <string name="wifi_disconnect">忘记</string>
+    <string name="wifi_connect_success">连接成功</string>
+    <string name="wifi_connect_fail">连接失败</string>
+    <string name="wifi_cancel">取消</string>
+    <string name="wifi_conn_status">连接状态</string>
+    <string name="wifi_ip_address">IP地址</string>
+    <string name="wifi_signal0">无信号</string>
+    <string name="wifi_signal1">弱</string>
+    <string name="wifi_signal2">强</string>
+    <string name="wifi_signal3">较强</string>
+    <string name="wifi_signal4">极强</string>
+    <string name="wifi_status_unprotect">未受保护的网络</string>
+    <string name="wifi_status_by">通过</string>
+    <string name="wifi_status_protect">进行保护</string>
+    
+    <string name="animation_basic">基本类型动画</string>
+    <string name="animation_custom">自定义控件动画</string>
+    <string name="animation_image">图片旋转动画</string>
+    <string name="animation_out_ticket">火车票出票动画</string>
+    <string name="animation_add_shop">加入购物车动画</string>
+    <string name="animation_youku">优酷导航菜单动画</string>
+    <string name="animation_scane">安全扫描动画</string>
+    <string name="animation_taobao_menu1">淘宝菜单1动画</string>
+    <string name="animation_taobao_menu2">淘宝菜单2动画</string>
+    <string name="animation_basic_scale">1. 缩放动画(ScaleAnimation)</string>
+    <string name="animation_basic_alpha">2. 透明度动画(AlphaAnimation)</string>
+    <string name="animation_basic_rotate">3. 旋转动画(RotateAnimation)</string>
+    <string name="animation_basic_translate">4. 位移动画(TranslateAnimation)</string>
+    <string name="animation_basic_translate_rotate">5. 位移+旋转动画</string>
+    <string name="animation_basic_alpha_alpha">6. 透明度+透明度动画</string>
+    <string name="animation_basic_flash">7. 闪烁动画(FlashAnimation)</string>
+    <string name="animation_basic_shake">8. 抖动动画(ShakeAnimation)</string>
+    <string name="animation_basic_switch">9. 切换动画(SwitchAnimation)</string>
+    <string name="animation_basic_layout">10. 布局动画(LayoutAnimation)</string>
+    <string name="animation_basic_frame">11. 逐帧动画(FrameAnimation)</string>
+    <string name="animation_custom_item0">文字飞入飞出效果</string>
+    <string name="animation_custom_item1">圆形旋转菜单</string>
+    <string name="animation_custom_item2">水波效果</string>
+    <string name="animation_custom_item3">声波效果</string>
+    <string name="animation_image_y">Ｙ轴旋转切换图片</string>
+    <string name="animation_image_custom">自定义图片动画效果</string>
+    <string name="animation_custom_circle_facebook">Facebook</string>
+    <string name="animation_custom_circle_twitter">Twitter</string>
+    <string name="animation_custom_circle_google">Google</string>
+    <string name="animation_custom_circle_linkedin">LinkedIn</string>
+    <string name="animation_custom_circle_wordpress">Wordpress</string>
+    <string name="animation_custom_circle_myspace">Myspace</string>
+    <string name="animation_custom_circle_start_app">Starting application:</string>
+    <string name="animation_out_ticket_hint_success">收款成功!</string>
+    
+    <string name="index_item0">索引0</string>
+    <string name="index_item1">索引1</string>
+    <string name="index_item2">索引2</string>
+    <string name="index_add_contacts">添加联系人</string>
+    <string name="index_add_contacts_name">姓名</string>
+    <string name="index_add_contacts_name_hint">请输入姓名</string>
+    <string name="index_add_contacts_phone">手机</string>
+    <string name="index_add_contacts_phone_hint">请输入手机号码</string>
+    <string name="index_search_edit_hint">请输入关键字</string>
+    <string name="index_search_filter">ListView过滤搜索</string>
+    
+    
+    <string name="textview_item0">打字机效果(TypeTextView)</string>
+    <string name="textview_item1">数字提醒1(自定义BadgeView)</string>
+    <string name="textview_item2">数字提醒2(带Jar包BadgeView)</string>
+    <string name="textview_item3">动态布局</string>
+    
+    <string name="textview_item0_text">题主我觉得你大概是被我们的同事三天两头就去问问题要材料搞烦了。。不过我们每年都来，一来就好几个月，
+        在会议室里面天天熬到半夜这样的事情我们也是没有办法的啊！因为作为一个企业，无论是私企还是国企，公司的所有者和经营者一般都是分开的。
+        所谓所有者，就是股东，而经营者就是企业各级管理人员。</string>
+        
+    <string name="progress_item0">带数字进度的进度条</string>
+    <string name="progress_item1">方形进度条</string>
+    <string name="progress_item2">光滑进度条</string>
+    <string name="progress_item3">下载带动画进度条</string>
+    <string name="progress_item4">Wheel进度条</string>
+    <string name="progress_item5">Selector进度条</string>
+    <string name="progress_item6">ColorRing进度条</string>
+    
+    <string name="progress_spin1">滚动模式1</string>
+    <string name="progress_increment">增量模式</string>
+    <string name="progress_default">默认模式</string>
+    <string name="progress_spin2">滚动模式2</string>
+    <string name="progress_custom_color">自定义颜色进度条</string>
+    <string name="progress_left_to_right">自左向右的进度条</string>
+    <string name="progress_right_to_left">自右向左的进度条</string>
+    <string name="progress_indeter">不确定的进度条</string>
+    
+    <string name="menu_item0">仿QQ5.0左侧菜单</string>
+    <string name="menu_item1">仿今日头条</string>
+    <string name="menu_item2">仿开心网</string>
+    <string name="menu_item3">仿360Cloud</string>
+    <string name="menu_item4">平移侧滑</string>
+    
+    <string name="menu_qq_news">消息</string>
+    <string name="menu_qq_contacts">联系人</string>
+    <string name="menu_qq_dongtai">动态</string>
+    <string name="menu_translate_tip">点击左上角图标就可以看到侧边栏效果</string>
+    <string name="menu_headline_slidemenu_left_login_tip">登录后，将推荐给你更多感兴趣的文章</string>
+    <string name="menu_headline_slidemenu_left_item_center">个人中心</string>
+    <string name="menu_headline_slidemenu_left_item_search">搜索</string>
+    <string name="menu_headline_slidemenu_left_item_favorite">收藏</string>
+    <string name="menu_headline_slidemenu_left_item_message">消息</string>
+    <string name="menu_headline_slidemenu_left_item_offline">离线</string>
+    <string name="menu_headline_slidemenu_left_item_offline_cancel">取消离线</string>
+    <string name="menu_headline_slidemenu_left_item_activity">活动</string>
+    <string name="menu_headline_slidemenu_left_item_setting">设置</string>
+    <string name="menu_headline_slidemenu_left_item_feedback">反馈</string>
+    <string name="menu_headline_slidemenu_left_item_appstore">精彩应用</string>
+    <string name="menu_headline_slidemenu_right_tip_no_login">未登录</string>
+    <string name="menu_headline_slidemenu_right_hint_text">"登录后 可关注好友评论和收藏"</string>
+    <string name="menu_headline_slidemenu_item_favorite_delete">删除</string>
+    <string name="menu_headline_slidemenu_pop_speech">读文章</string>
+    <string name="menu_headline_slidemenu_pop_favorite">收藏</string>
+    <string name="menu_headline_slidemenu_pop_dislike">不感兴趣</string>
+    <string name="menu_headline_setting_title">设置</string>
+    <string name="menu_headline_setting_right">意见反馈</string>
+    <string name="menu_headline_setting_list_mode">列表显示摘要</string>
+    <string name="menu_headline_setting_night_mode">夜间模式</string>
+    <string name="menu_headline_setting_font_size">字体大小</string>
+    <string name="menu_headline_setting_list_comment">列表页评论</string>
+    <string name="menu_headline_setting_refresh_list">列表页刷新</string>
+    <string name="menu_headline_setting_load_image">2G/3G网络流量</string>
+    <string name="menu_headline_setting_clear">清理缓存</string>
+    <string name="menu_headline_setting_notify">推送通知</string>
+    <string name="menu_headline_setting_interactive">互动插件</string>
+    <string name="menu_headline_setting_use_swipe">左右翻页</string>
+    <string name="menu_headline_setting_close_shake_hand">关闭摇一摇切换夜间模式</string>
+    <string name="menu_headline_setting_share_when_favor">收藏时转发</string>
+    <string name="menu_headline_setting_share_when_diggbury">顶踩时转发</string>
+    <string name="menu_headline_setting_update">检查新版本</string>
+    <string name="menu_headline_setting_recommend">精彩应用推荐</string>
+    <string name="menu_headline_setting_switch_domain">启动网络调试</string>
+    <string name="menu_headline_setting_use_help">使用帮助</string>
+    <string name="menu_headline_setting_copyright">© 头条网 toutiao.com</string>
+    <string name="menu_headline_setting_day_mode">日间模式</string>
+    
+    <string name="page_slide_item0">ViewPager0</string>
+    <string name="page_slide_item1">ViewPager1</string>
+    <string name="page_slide_item2">Viewpager2</string>
+    <string name="page_slide_item3">仿小米首页</string>
+    <string name="page_slide_item4">仿360安全卫士</string>
+    <string name="page_slide_item5">仿蘑菇街</string>
+    <string name="page_slide_item6">仿在路上</string>
+    <string name="page_slide_item7">仿新浪微博</string>
+    <string name="page_slide_item8">仿大众点评</string>
+    <string name="page_slide_item9">仿华为商城</string>
+    <string name="page_slide_item10">ViewPager3</string>
+    <string name="page_slide_item11">JellyViewPager</string>
+    
+    <string name="page_slide_viewpager_me"> 我</string>
+    <string name="page_slide_viewpager_review">评论</string>
+    <string name="page_slide_viewpager_letter">私信</string>
+    <string name="page_slide_item6_home">首页</string>
+    <string name="page_slide_item6_category">分类</string>
+    <string name="page_slide_item6_collect">收藏</string>
+    <string name="page_slide_item6_setting">设置</string>
+    <string name="page_slide_item7_choice">精选</string>
+    <string name="page_slide_item7_special">专题</string>
+    <string name="page_slide_item7_activity">活动</string>
+    <string name="page_slide_item7_login">登录</string>
+    <string name="page_slide_item7_pull_to_refresh">下拉刷新</string>
+    <string name="page_slide_item7_release_to_refresh">释放立即刷新</string>
+    <string name="page_slide_item7_refreshing">正在刷新...</string>
+    <string name="page_slide_item7_refresh_succeed">刷新成功</string>
+    <string name="page_slide_item7_refresh_fail">暂无更新</string>
+    <string name="page_slide_item7_pullup_to_load">上拉加载更多</string>
+    <string name="page_slide_item7_release_to_load">释放立即加载</string>
+    <string name="page_slide_item7_loading">正在加载...</string>
+    <string name="page_slide_item7_load_succeed">加载成功</string>
+    <string name="page_slide_item7_load_fail">已无更多数据</string>
+    <string name="page_slide_item7_tour">旅行专题</string>
+    <string name="page_slide_item7_image">图片专题</string>
+    <string name="page_slide_item7_more">更多</string>
+    <string name="page_slide_item7_share">分享</string>
+    <string name="page_slide_item7_picture">照片</string>
+    <string name="page_slide_item7_photo">拍照</string>
+    <string name="page_slide_item7_text">说说</string>
+    <string name="page_slide_item7_weibo">微博</string>
+    <string name="page_slide_item7_weixin">微信</string>
+    <string name="page_slide_item7_qq">QQ</string>
+    <string name="page_slide_item7_other">或用其他账号登录</string>
+    <string name="page_slide_item7_email">邮箱/手机号"</string>
+    <string name="page_slide_item7_pwd">密码</string>
+    
+    <string name="page_slide_item8_home">主页</string>
+    <string name="page_slide_item8_message">消息</string>
+    <string name="page_slide_item8_friend">好友</string>
+    <string name="page_slide_item8_squar">广场</string>
+    <string name="page_slide_item8_more">更多</string>
+    <string name="page_slide_item8_person_home">个人主页</string>
+    <string name="page_slide_item8_pull_to_refresh_pull_label">拖拽刷新...</string>
+    <string name="page_slide_item8_pull_to_refresh_release_label">松手即可刷新...</string>
+    <string name="page_slide_item8_pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="page_slide_item8_pull_to_refresh_tap_label">点击刷新...</string>
+    <string name="page_slide_item8_loading">数据正努力加载中...</string>
+    <string name="page_slide_item8_shake">摇一摇</string>
+    <string name="page_slide_item8_contact">通讯录</string>
+    <string name="page_slide_item8_nearby">附近</string>
+    <string name="page_slide_item8_weibo">微博</string>
+    <string name="page_slide_item8_qrcode">二维码</string>
+    
+    
+    <string name="page_slide_viewpager_gridview_study">我 爱 学 习</string>
+    <string name="page_slide_viewpager_gridview_other">其 他 相 关</string>
+    <string name="page_slide_viewpager_gridview1">九宫格1</string>
+    <string name="page_slide_viewpager_gridview2">九宫格2</string>
+    <string name="page_slide_viewpager_gridview3">九宫格3</string>
+    <string name="page_slide_viewpager_gridview4">九宫格4</string>
+    <string name="page_slide_viewpager_gridview5">九宫格5</string>
+    <string name="page_slide_viewpager_gridview6">九宫格6</string>
+    <string name="page_slide_viewpager_gridview7">九宫格7</string>
+    <string name="page_slide_viewpager_gridview8">九宫格8</string>
+    <string name="page_slide_viewpager_gridview9">九宫格9</string>
+    
+    <string name="notification_show">显示通知栏</string>
+    <string name="notification_show_alway">显示常驻通知栏</string>
+    <string name="notification_show_intent_action">显示通知，点击跳转到指定Activity</string>
+    <string name="notification_show_intent_apk">显示通知，点击打开APK</string>
+    <string name="notification_show_clear_one">清除指定通知</string>
+    <string name="notification_show_clear_all">清除所有通知</string>
+    <string name="notification_show_custom">显示自定义通知栏</string>
+    <string name="notification_show_progress">显示带进度条通知栏</string>
+    <string name="notification_show_custom_notification">自定义通知栏</string>
+    <string name="notification_show_custom_notification_btn">带按钮的自定义通知栏</string>
+    <string name="notification_show_custom_tip">注意：通知栏按钮只适合3.0及以上版本</string>
+    <string name="notification_show_progress_default">默认样式进度条通知栏</string>
+    <string name="notification_show_progress_undefault">不确定默认样式进度条通知栏</string>
+    <string name="notification_show_progress_custom">自定义样式进度条通知栏</string>
+    <string name="notification_show_progress_start">开始下载</string>
+    <string name="notification_show_progress_pause">暂停下载</string>
+    <string name="notification_show_progress_cancel">取消下载</string>
+    
+    <string name="dialog_item0">确定取消信息框</string>
+    <string name="dialog_item1">多个按钮信息框</string>
+    <string name="dialog_item2">列表框</string>
+    <string name="dialog_item3">进度条框</string>
+    <string name="dialog_item4">单项选择列表框</string>
+    <string name="dialog_item5">多项选择列表框</string>
+    <string name="dialog_item6">自定义布局</string>
+    <string name="dialog_item7">读取进度框</string>
+    <string name="dialog_item8">自定义加载框</string>
+    
+    <string name="listview_item0">上下拉刷新的ListView</string>
+    <string name="listview_item1">滑动删除条目的ListView</string>
+    <string name="listview_item2">左侧按钮删除条目的ListView</string>
+    <string name="listview_item3">PullToZoom ListView</string>
+    <string name="listview_item4">分页加载的ListView</string>
+    
+    <string name="guide_item0">Zaker风格</string>
+    <string name="guide_item1">镜头风格-由远至近</string>
+    <string name="guide_item2">ViewPager引导风格</string>
+    <string name="guide_item3">Show Time 2秒式</string>
+    <string name="guide_item4">仿京东商城</string>
+    
+    <string name="guide_item0_one">第一层</string>
+    <string name="guide_item0_two">第二层</string>
+    <string name="guide_item0_up">上滑可以进入首页</string>
+    
+    <string name="feedback_advice">我的建议</string>
+    <string name="feedback_send">提交</string>
+    <string name="feedback_edittext_hint">请输入您的建议(不少于8个字符)</string>
+    <string name="feedback_send_fail">亲, 提点建议吧!</string>
+    <string name="feedback_send_success">非常感谢您的建议!</string>
+    
+    
+    <string name="user_friend_head_title">我的好友</string>
+    <string name="user_friend_follower">关注(%d)</string>
+    <string name="user_friend_fans">粉丝(%d)</string>
+    <string name="user_blog">博客(%d)</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="republish_tweet">网络超时，是否重新发布动弹？</string>
+    
+    <string name="select">选择</string>
+    <string name="share">分享</string>
+    
+    <string name="delete_tweet">确定删除该动弹吗？</string>
+    <string name="delete_blog">确定删除该博客吗？</string>
+    
+    <string name="load_more">更多</string>
+    <string name="load_ing">加载中···</string>
+    <string name="load_full">已加载全部</string>
+    <string name="load_empty">暂无数据</string>
+    <string name="load_error">加载数据出错</string>
+    
+    
+    <string name="new_data_toast_message">有 %d 条更新</string>
+    <string name="new_data_toast_none">没有新更新</string>
+    <string name="msg_noaccess_delete">您没有删除权限</string>
+    
+    <string name="comment_reply_title">---共有 %d 条评论---</string>
+    <string name="message_detail_head_title">我和%s的对话</string>
+    
+    <string name="main_menu_login">用户登录</string>
+    <string name="main_menu_logout">注销登录</string>
+    <string name="main_menu_myinfo">我的资料</string>
+    <string name="main_menu_software">开源软件</string>
+    <string name="main_menu_search">搜索</string>
+    <string name="main_menu_picshow">显示图片</string>
+    <string name="main_menu_picnoshow">隐藏图片</string>
+    <string name="main_menu_cache">清除缓存</string>
+    <string name="main_menu_email">意见反馈</string>
+    <string name="main_menu_about">关于我们</string>
+    <string name="main_menu_setting">系统设置</string>
+    <string name="main_menu_exit">退出程序</string>
+    
+    <string name="frame_title_news_lastest">最新资讯</string>
+    <string name="frame_title_news_blog">最新博客</string>
+    <string name="frame_title_news_recommend">推荐阅读</string>
+    <string name="frame_title_question_ask">问答</string>
+    <string name="frame_title_question_share">分享</string>
+    <string name="frame_title_question_other">综合</string>
+    <string name="frame_title_question_job">职业</string>
+    <string name="frame_title_question_site">站务</string>
+    <string name="frame_title_tweet_lastest">最新动弹</string>
+    <string name="frame_title_tweet_hot">热门动弹</string>
+    <string name="frame_title_tweet_my">我的动弹</string>
+    <string name="frame_title_tweet_send">动弹一下</string>
+    <string name="frame_title_active_lastest">最新动态</string>
+    <string name="frame_title_active_atme">我</string>
+    <string name="frame_title_active_comment">评论</string>
+    <string name="frame_title_active_myself">我自己</string>
+    <string name="frame_title_active_message">留言</string>
+    
+    <string name="notebook_item0">小米便签</string>
+    <string name="notebook_item1">记账记事本</string>
+    <string name="notebook_item2">风知记事本</string>
+    <string name="notebook_item3">密码记事本</string>
+    <string name="notebook_item4">时光记事本</string>
+    
+   
+    <string name="milletnote_call_record_folder_name">通话便签</string>
+    <string name="milletnote_menu_create_folder">新建文件夹</string>
+    <string name="milletnote_menu_export_text">导出文本</string>
+    <string name="milletnote_menu_sync">同步</string>
+    <string name="milletnote_menu_sync_cancel">取消同步</string>
+    <string name="milletnote_menu_setting">设置</string>
+    <string name="milletnote_menu_search">搜索</string>
+    <string name="milletnote_menu_delete">删除</string>
+    <string name="milletnote_menu_move">移动到文件夹</string>
+    <string name="milletnote_menu_select_all">全选</string>
+    <string name="milletnote_menu_select_title">选中了 %d 项</string>
+    <string name="milletnote_menu_deselect_all">取消全选</string>
+    <string name="milletnote_menu_select_none">没有选中项，操作无效</string>
+    <string name="milletnote_menu_title_select_folder">选择文件夹</string>
+    <string name="milletnote_menu_move_parent_folder">上一级文件夹</string>
+    <string name="milletnote_menu_folder_change_name">修改文件夹名称</string>
+    <string name="milletnote_menu_folder_view">查看文件夹</string>
+    <string name="milletnote_menu_folder_delete">刪除文件夹</string>
+    <string name="milletnote_menu_new">新建便签</string>
+    <string name="milletnote_alert_title_delete">删除</string>
+    <string name="milletnote_alert_message_delete_notes">确认要删除所选的 %d 条便签吗?</string>
+    <string name="milletnote_alert_message_delete_note">确认要删除该条便签吗?</string>
+    <string name="milletnote_alert_message_delete_folder">确认删除文件夹及所包含的便签吗？</string>
+    <string name="milletnote_format_move_notes_to_folder">已将所选 %1$d 条便签移到 %2$s 文件夹</string>
+    <string name="milletnote_hint_foler_name">请输入名称</string>
+    <string name="milletnote_folder_exist">文件夹 %1$s 已存在，请重新命名</string>
+    <string name="milletnote_widget_havenot_content">没有关联内容，点击新建便签。</string>
+    <string name="milletnote_widget_under_visit_mode">访客模式下，便签内容不可见</string>
+    <string name="milletnote_success_sdcard_export">导出成功</string>
+    <string name="milletnote_failed_sdcard_export">导出失败</string>
+    <string name="milletnote_error_sdcard_unmounted">SD卡被占用，不能操作</string>
+    <string name="milletnote_format_exported_file_location">已将文本文件(%1$s)输出至SD卡(%2$s)目录</string>
+    <string name="milletnote_error_sdcard_export">导出文本时发生错误，请检查SD卡</string>
+    <string name="milletnote_settings_title">设置</string>
+    <string name="milletnote_settings_account_title">同步账号</string>
+    <string name="milletnote_settings_account_summary">与google task同步便签记录</string>
+    <string name="milletnote_settings_last_sync_time">上次同步于 %1$s</string>
+    <string name="milletnote_settings_last_sync_time_format">yyyy-MM-dd hh:mm:ss</string>
+    <string name="milletnote_settings_add_account">添加账号</string>
+    <string name="milletnote_settings_menu_change_account">更换账号</string>
+    <string name="milletnote_settings_menu_remove_account">删除账号</string>
+    <string name="milletnote_settings_menu_cancel">取消</string>
+    <string name="milletnote_settings_sync_immediately">立即同步</string>
+    <string name="milletnote_settings_sync_cancel">取消同步</string>
+    <string name="milletnote_settings_dialog_change_account_title">当前帐号 %1$s</string>
+    <string name="milletnote_settings_dialog_change_account_warn_msg">如更换同步帐号，过去的帐号同步信息将被清空，再次切换的同时可能会造成数据重复</string>
+    <string name="milletnote_settings_dialog_select_account_title">同步便签</string>
+    <string name="milletnote_settings_dialog_select_account_tips">请选择google帐号，便签将与该帐号的google task内容同步。</string>
+    <string name="milletnote_settings_cannot_change_account">正在同步中，不能修改同步帐号</string>
+    <string name="milletnote_settings_success_set_accout">同步帐号已设置为%1$s</string>
+    <string name="milletnote_settings_bg_random_appear_title">新建便签背景颜色随机</string>
+    <string name="milletnote_format_datetime_mdhm">MM月dd日 kk:mm</string>
+    <string name="milletnote_format_date_ymd">yyyyMMdd</string>
+    <string name="milletnote_format_folder_files_count">(%d)</string>
+    <string name="milletnote_file_path">/MIUI/notes/</string>
+    <string name="milletnote_file_name_txt_format">notes_%s.txt</string>
+    <string name="milletnote_note_link_tel">呼叫电话</string>
+    <string name="milletnote_note_link_email">发送邮件</string>
+    <string name="milletnote_note_link_web">浏览网页</string>
+    <string name="milletnote_note_link_other">打开地图</string>
+    <string name="milletnote_menu_font_small">小</string>
+    <string name="milletnote_menu_font_normal">正常</string>
+    <string name="milletnote_menu_font_large">大</string>
+    <string name="milletnote_menu_font_super">超大</string>
+    <string name="milletnote_error_note_not_exist">要查看的便签不存在</string>
+    <string name="milletnote_note_alert_expired">已过期</string>
+    <string name="milletnote_enter_desktop">已添加到桌面</string>
+    <string name="milletnote_empty_to_desktop">不能将空便签发送到桌面</string>
+    <string name="milletnote_empty_for_clock">不能为空便签设置闹钟提醒</string>
+    <string name="milletnote_name">便签</string>
+    <string name="milletnote_app_widget2x2">便签2x2</string>
+    <string name="milletnote_app_widget4x4">便签4x4</string>
+    <string name="milletnote_alert_ok">知道了</string>
+    <string name="milletnote_alert_enter">查看</string>
+    <string name="milletnote_datetime_ok">设置</string>
+    <string name="milletnote_datetime_cancel">取消</string>
+    <string name="milletnote_edit_menu_new">新建便签</string>
+    <string name="milletnote_edit_menu_delete">删除</string>
+    <string name="milletnote_edit_menu_font_size">文字大小</string>
+    <string name="milletnote_edit_menu_list_mode">进入清单模式</string>
+    <string name="milletnote_edit_menu_normal_mode">退出清单模式</string>
+    <string name="milletnote_edit_menu_share">分享</string>
+    <string name="milletnote_edit_menu_send_to_desktop">发送到桌面</string>
+    <string name="milletnote_edit_menu_alert">提醒我</string>
+    <string name="milletnote_edit_menu_remove_remind">删除提醒</string>
+    <string name="milletnote_ticker_syncing">同步便签...</string>
+    <string name="milletnote_ticker_success">同步成功</string>
+    <string name="milletnote_ticker_fail">同步失败</string>
+    <string name="milletnote_ticker_cancel">同步已取消</string>
+    <string name="milletnote_sync_progress_login">登录%1$s...</string>
+    <string name="milletnote_sync_account_success">与%1$s同步成功</string>
+    <string name="milletnote_sync_init_list">正在获取服务器便签列表...</string>
+    <string name="milletnote_sync_syncing">正在同步本地便签...</string>
+    <string name="milletnote_sync_error_network">同步失败，请检查网络和帐号设置</string>
+    <string name="milletnote_sync_error_internal">同步失败，发生内部错误</string>
+    <string name="milletnote_sync_error_cancelled">同步已取消</string>
+    <string name="milletnote_search_label">正在搜索便签</string>
+    <string name="milletnote_search_hint">搜索便签</string>
+    <string name="milletnote_search_description">便签中的文字</string>
+    
+    <string name="pwdnotes_new">新建备忘录>></string>
+    <string name="pwdnotes_back">返回</string>
+    <string name="pwdnotes_delete">刪除</string>
+    <string name="pwdnotes_edit">编辑</string>
+    <string name="pwdnotes_prompt">提示</string>
+    <string name="pwdnotes_exit">你确定要进行删除操作吗?</string>
+    <string name="pwdnotes_confirm">确定</string>
+    <string name="pwdnotes_cancel">取消</string>
+    
+    <string name="windnote_name">风知记事</string>
+    <string name="windnote_welcome">就让往事随风~</string>
+    <string name="windnote_new_note">新的记事</string>
+    <string name="windnote_title_hint">标题</string>
+    <string name="windnote_clear">×</string>
+    <string name="windnote_content_hint">写点什么呢？</string>
+    <string name="windnote_no_title">无标题</string>
+    
+    <string name="windnote_delete_yes">删除记事</string>
+    <string name="windnote_delete_no">取消删除</string>
+    <string name="windnote_clear_note">清空内容</string>
+	<string name="windnote_clear_cancel">取消清空</string>
+	
+	<string name="windnote_gone_time">保存天数</string>
+	<string name="windnote_gone_count">阅读次数</string>
+	<string name="windnote_leave">不想放飞</string>
+	<string name="windnote_gone">放飞记事</string>
+	
+	<string name="windnote_note_left">剩余</string>
+	<string name="windnote_note_time">天</string>
+	<string name="windnote_note_count">次</string>
+	<string name="windnote_note_deleted">记事已删除</string>
+	<string name="windnote_note_saved">记事已保存</string>
+	<string name="windnote_note_null">写点什么吧~</string>
+	
+	<string name="windnote_note_search">搜索记事</string>
+	<string name="windnote_note_refresh">记事已刷新</string>
+	
+	<string name="windnote_key_success">请记住新密码：</string>
+	<string name="windnote_key_canceled">密码已取消</string>
+	<string name="windnote_key_new">新密码</string>
+	<string name="windnote_key_length">至少6位</string>
+	<string name="windnote_key_again">请确认</string>
+	<string name="windnote_key_reset">修改密码</string>
+	<string name="windnote_key_cancel">取消密码</string>
+	<string name="windnote_key_old">原密码</string>
+	<string name="windnote_key">密码</string>
+	<string name="windnote_key_wrong">密码错误</string>
+	
+	<string name="windnote_word_yes">是</string>
+	<string name="windnote_word_no">否</string>
+	<string name="windnote_word_time">天</string>
+	<string name="windnote_word_count">次</string>
+	<string name="windnote_word_confirm">确定</string>
+	<string name="windnote_word_cancel">取消</string>
+	<string name="windnote_word_today">今天</string>
+	<string name="windnote_word_ago">天前</string>
+	<string name="windnote_word_my">我的</string>
+	<string name="windnote_word_said">说过：</string>
+	
+	<string name="windnote_skin">正在使用该皮肤</string>
+	<string name="windnote_exit_hint">再按一次退出风知记事</string>
+	<string name="windnote_lave">剩余</string>
+	
+	<string name="windnote_action_skin">皮肤</string>
+    <string name="windnote_action_help">帮助</string>
+    <string name="windnote_action_about">关于</string>
+    <string name="windnote_action_key">密码</string>
+    <string name="windnote_action_say">感悟</string>
+    <string name="windnote_action_font">字体</string>
+    <string name="windnote_action_exit">退出</string>
+    
+    <string name="windnote_about">风知记事 v1.0\r\n\r\n作者：swimmi\r\n邮箱：go2eric@126.com\r\n\r\n欢迎交流，谢谢支持！</string>
+    
+    
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+    <string-array name="drawer_titel">
+        <item>Colour</item>
+        <item>Subitem One</item>
+        <item>Subitem Two</item>
+        <item>Style</item>
+        <item>Subitem Three</item>
+        <item>Title Three</item>
+        <item>Subitem Four</item>
+        <item>Subitem Five</item>
+    </string-array>
+    
+    <string-array name="drawer_descriptions">
+        <item></item>
+        <item>Description One</item>
+        <item>Description Two</item>
+        <item></item>
+        <item>Description Three</item>
+        <item></item>
+        <item>Description Four</item>
+        <item>Description Five</item>
+    </string-array>
+    
+    <string-array name="alignstyle">
+        <item>CENTER</item>
+        <item>RIGHT</item>
+        <item>LEFT</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string-array name="interpolators">
+        <item>Accelerate</item>
+        <item>Linear</item>
+        <item>AccelerateDecelerate</item>
+        <item>Decelerate</item>
+        <item>FastOutSlowIn</item>
+    </string-array>
+    
+    <string name="action_normal">Normal</string>
+    <string name="action_parallax">Parallax</string>
+    <string name="action_show_head">Show Head</string>
+    <string name="action_hide_head">Hide Head</string>
+    <string name="action_disable_zoom">Disable Zoom</string>
+    <string name="action_enable_zoom">Enable Zoom</string>
+    
+    <string name="paging_loading">Loading&#8230;</string>
+
+</resources>

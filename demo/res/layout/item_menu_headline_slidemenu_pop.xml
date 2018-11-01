@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ff3e3e3e"
+    android:gravity="center_vertical"
+    android:minHeight="36.0dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/id_slidemenu_pop_speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_headline_pop_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:minHeight="36.0dip"
+        android:minWidth="90.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_slidemenu_pop_speech_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_headline_pop_speech"
+            android:drawablePadding="4.0dip"
+            android:duplicateParentState="true"
+            android:text="@string/menu_headline_slidemenu_pop_speech"
+            android:textColor="@color/menu_headline_slidemenu_pop_color"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_slidemenu_pop_line"
+        android:layout_width="0.5dip"
+        android:layout_height="22.0dip"
+        android:background="@drawable/menu_headline_pop_line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/id_slidemenu_pop_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_headline_pop_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:minHeight="36.0dip"
+        android:minWidth="90.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_slidemenu_pop_favorite_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_headline_pop_favorite"
+            android:drawablePadding="4.0dip"
+            android:duplicateParentState="true"
+            android:text="@string/menu_headline_slidemenu_pop_favorite"
+            android:textColor="@color/menu_headline_slidemenu_pop_color"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0.5dip"
+        android:layout_height="22.0dip"
+        android:background="@drawable/menu_headline_pop_line"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/id_slidemenu_pop_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_headline_pop_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:minHeight="36.0dip"
+        android:minWidth="90.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_slidemenu_pop_dislike_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/menu_headline_pop_dislike"
+            android:drawablePadding="4.0dip"
+            android:duplicateParentState="true"
+            android:text="@string/menu_headline_slidemenu_pop_dislike"
+            android:textColor="@color/menu_headline_slidemenu_pop_color"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0.5dip"
+        android:layout_height="22.0dip"
+        android:background="@drawable/menu_headline_pop_line"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/id_slidemenu_pop_close"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:background="@drawable/menu_headline_pop_bg"
+        android:scaleType="center"
+        android:src="@drawable/menu_headline_pop_close"
+        android:contentDescription="@string/app_name" />
+
+</LinearLayout>

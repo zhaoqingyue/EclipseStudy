@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/ad_main_title"
+        layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:id="@+id/ad_main_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ad_main_title"
+        android:background="@drawable/safety_intercept_top_bg" >
+
+        <ImageView
+            android:id="@+id/mailcous_iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/safety_intercept_icon"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/mailcous_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mailcous_iv1"
+            android:padding="5dp"
+            android:text="通知栏广告检测"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mailcous_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mailcous_tv1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/mailcous_iv1"
+            android:text="暂无通知栏消息"
+            android:textColor="#D7D0C0"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_clear_system_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ad_main_ll2"
+        android:background="@drawable/safety_intercept_bar_bg" >
+
+        <TextView
+            android:id="@+id/mailcous_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="包含无风险广告插件的软件"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ad_main_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/safety_intercept_circle_bg"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/ad_main_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ad_main_num"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ad_main_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/safety_intercept_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/page_slide_way_bottom_bg" >
+
+        <TextView
+            android:id="@+id/id_page_slide_way_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="#99CCFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/id_page_slide_way_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/id_page_slide_way_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/page_slide_way_bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/id_page_slide_way_choice"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/page_slide_way_choice"
+            android:gravity="center"
+            android:text="@string/page_slide_item7_choice"
+            android:textColor="@color/page_slide_way_tab_color" />
+
+        <RadioButton
+            android:id="@+id/id_page_slide_way_special"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/page_slide_way_special"
+            android:gravity="center"
+            android:text="@string/page_slide_item7_special"
+            android:textColor="@color/page_slide_way_tab_color" />
+
+        <RadioButton
+            android:id="@+id/id_page_slide_way_add"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/page_slide_way_add"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/id_page_slide_way_activity"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/page_slide_way_activity"
+            android:gravity="center"
+            android:text="@string/page_slide_item7_activity"
+            android:textColor="@color/page_slide_way_tab_color" />
+
+        <RadioButton
+            android:id="@+id/id_page_slide_way_login"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/page_slide_way_login"
+            android:gravity="center"
+            android:text="@string/page_slide_item7_login"
+            android:textColor="@color/page_slide_way_tab_color" />
+    </RadioGroup>
+
+</LinearLayout>

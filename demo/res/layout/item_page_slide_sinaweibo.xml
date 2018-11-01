@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/id_sinaweibo_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/page_slide_sinaweibo_new_regist_poppic_default" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/id_sinaweibo_red_count"
+        android:layout_toRightOf="@+id/id_sinaweibo_icon"
+        android:gravity="left"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:text="名字"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_sinaweibo_username"
+        android:layout_below="@+id/id_sinaweibo_icon"
+        android:autoLink="web"
+        android:text="微博内容"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/id_sinaweibo_status_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_sinaweibo_text"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/id_sinaweibo_username"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@drawable/page_slide_sinaweibo_comment_icon"
+        android:text="10"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_red_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_sinaweibo_username"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/id_sinaweibo_comment_count"
+        android:drawableLeft="@drawable/page_slide_sinaweibo_redirect_icon"
+        android:text="10"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_sinaweibo_text"
+        android:layout_below="@+id/id_sinaweibo_status_img"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/page_slide_sinaweibo_popup"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/id_sinaweibo_red_stu_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_red_stu_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_sinaweibo_red_stu_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:paddingBottom="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_sinaweibo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_sinaweibo_layout"
+        android:layout_below="@+id/id_sinaweibo_layout"
+        android:paddingTop="6dp"
+        android:text="1分钟前"
+        android:textColor="#B535E5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_sinaweibo_layout"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/id_sinaweibo_time"
+        android:paddingTop="6dp"
+        android:text="来至于新浪微博"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/id_sinaweibo_source"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/page_slide_sinaweibo_icon_unlike_detail"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="+1" />
+
+</RelativeLayout>

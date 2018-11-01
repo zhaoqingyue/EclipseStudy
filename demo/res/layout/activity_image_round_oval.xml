@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle1"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius="30dip"
+                    app:riv_oval="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle0"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius="30dip"
+                    app:riv_oval="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle1"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius_top_left="30dp"
+                    app:riv_corner_radius_top_right="30dp"
+                    app:riv_oval="false" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle0"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius_bottom_left="30dp"
+                    app:riv_corner_radius_bottom_right="30dp"
+                    app:riv_oval="false" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle1"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius_top_left="30dp"
+                    app:riv_corner_radius_bottom_left="30dp"
+                    app:riv_oval="false" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.zhaoqy.app.demo.picture.oval.view.RoundedImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="10dip"
+                    android:scaleType="center"
+                    android:src="@drawable/picture_circle0"
+                    app:riv_border_color="@color/image_round_oval_border"
+                    app:riv_border_width="3dip"
+                    app:riv_corner_radius_top_right="30dp"
+                    app:riv_corner_radius_bottom_right="30dp"
+                    app:riv_oval="false" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

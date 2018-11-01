@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+        <attr name="delayMillis" format="dimension" />
+        <attr name="contourColor" format="color" />
+        <attr name="contourSize" format="float" />
+    </declare-styleable>
+    
+    <declare-styleable name="Circle">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="rotateToCenter" format="boolean" />
+        <attr name="isRotating" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="name" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="TabWidget">
+        <attr name="bottom_labels" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="textview">  
+        <attr name="left_height" format="dimension" />  
+        <attr name="left_width" format="dimension" />  
+        <attr name="right_height" format="dimension" />  
+        <attr name="right_width" format="dimension" />  
+        <attr name="top_height" format="dimension" />  
+        <attr name="top_width" format="dimension" />  
+        <attr name="bottom_height" format="dimension" />  
+        <attr name="bottom_width" format="dimension" />  
+    </declare-styleable>  
+    
+    <declare-styleable name="JazzyViewPager">
+        <attr name="style">
+            <enum name="standard" value="0" />
+            <enum name="tablet" value="1" />
+            <enum name="cubein" value="2" />
+            <enum name="cubeout" value="3" />
+            <enum name="flipvertical" value="4" />
+            <enum name="fliphorizontal" value="5" />
+            <enum name="stack" value="6" />
+            <enum name="zoomin" value="7" />
+            <enum name="zoomout" value="8" />
+            <enum name="rotateup" value="9" />
+            <enum name="rotatedown" value="10" />
+            <enum name="accordion" value="11" />
+        </attr>
+        <attr name="outlinefadeEnabled" format="boolean" />
+        <attr name="outlineEnabled" format="boolean" />
+        <attr name="outlineColor" format="color|reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="SmoothProgressBar">
+        <attr name="spbStyle" format="reference"/>
+        <attr name="spb_color" format="color"/>
+        <attr name="spb_stroke_width" format="dimension"/>
+        <attr name="spb_stroke_separator_length" format="dimension"/>
+        <attr name="spb_sections_count" format="integer"/>
+        <attr name="spb_speed" format="float"/>
+        <attr name="spb_progressiveStart_speed" format="float"/>
+        <attr name="spb_progressiveStop_speed" format="float"/>
+        <attr name="spb_interpolator" format="enum">
+            <enum name="spb_interpolator_accelerate" value="0"/>
+            <enum name="spb_interpolator_linear" value="1"/>
+            <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
+            <enum name="spb_interpolator_decelerate" value="3"/>
+        </attr>
+        <attr name="spb_reversed" format="boolean"/>
+        <attr name="spb_mirror_mode" format="boolean"/>
+        <attr name="spb_colors" format="reference"/>
+        <attr name="spb_progressiveStart_activated" format="boolean"/>
+        <attr name="spb_background" format="reference"/>
+        <attr name="spb_generate_background_with_colors" format="boolean"/>
+        <attr name="spb_gradients" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpbStyle" format="reference"/>
+        <attr name="cpb_color" format="color"/>
+        <attr name="cpb_colors" format="reference"/>
+        <attr name="cpb_stroke_width" format="dimension"/>
+        <attr name="cpb_min_sweep_angle" format="integer"/>
+        <attr name="cpb_max_sweep_angle" format="integer"/>
+        <attr name="cpb_sweep_speed" format="float"/>
+        <attr name="cpb_rotation_speed" format="float"/>
+    </declare-styleable>
+    
+    <attr name="bgColor" format="color" />
+    <attr name="fgColor" format="color" />
+    <attr name="percent" format="float" />
+    <attr name="startAngle" format="float" />
+
+    <declare-styleable name="SectorProgress">
+        <attr name="bgColor" />
+        <attr name="fgColor" />
+        <attr name="percent" />
+        <attr name="startAngle" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorRingProgress">
+        <attr name="bgColor" />
+        <attr name="fgColorStart" format="color" />
+        <attr name="fgColorEnd" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="percent" />
+        <attr name="startAngle" />
+    </declare-styleable>
+    
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oschina_head_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="2dip"
+    android:paddingRight="7dip" >
+
+    <ImageView
+        android:id="@+id/question_pub_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/icon_back"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/question_pub_head_title"
+        style="@style/oschina_detail_head_title"
+        android:text="我要发帖" />
+
+    <Button
+        android:id="@+id/question_pub_publish"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/button_enable_green_selector"
+        android:text="发布"
+        android:textSize="20sp" />
+
+</LinearLayout>

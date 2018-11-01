@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include layout="@layout/view_title" />
+
+    <TabWidget
+        android:id="@android:id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+    </TabWidget>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/id_sinaweibo_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/page_slide_sinaweibo_tab_bg"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <RadioButton
+                android:id="@+id/id_sinaweibo_radio_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@drawable/page_slide_sinaweibo_tab_item_bg"
+                android:button="@null"
+                android:drawableTop="@drawable/page_slide_sinaweibo_icon_home"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="@string/page_slide_item8_home"
+                android:textColor="@color/page_slide_sinaweibo_tab_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/id_sinaweibo_radio_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@drawable/page_slide_sinaweibo_tab_item_bg"
+                android:button="@null"
+                android:drawableTop="@drawable/page_slide_sinaweibo_icon_meassage"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="@string/page_slide_item8_message"
+                android:textColor="@color/page_slide_sinaweibo_tab_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/id_sinaweibo_radio_friend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@drawable/page_slide_sinaweibo_tab_item_bg"
+                android:button="@null"
+                android:drawableTop="@drawable/page_slide_sinaweibo_icon_friend"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="@string/page_slide_item8_friend"
+                android:textColor="@color/page_slide_sinaweibo_tab_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/id_sinaweibo_radio_squar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@drawable/page_slide_sinaweibo_tab_item_bg"
+                android:button="@null"
+                android:drawableTop="@drawable/page_slide_sinaweibo_icon_square"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="@string/page_slide_item8_squar"
+                android:textColor="@color/page_slide_sinaweibo_tab_color"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/id_sinaweibo_radio_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0"
+                android:background="@drawable/page_slide_sinaweibo_tab_item_bg"
+                android:button="@null"
+                android:drawableTop="@drawable/page_slide_sinaweibo_icon_more"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="@string/page_slide_item8_more"
+                android:textColor="@color/page_slide_sinaweibo_tab_color"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</TabHost>

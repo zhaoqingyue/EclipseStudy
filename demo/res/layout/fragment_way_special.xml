@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_way_loading" />
+
+    <ScrollView
+        android:id="@+id/id_way_special_srcollow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/page_slide_way_icon_note"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/page_slide_item7_tour"
+                    android:textColor="#0099CC"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/id_way_special_image1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/page_slide_way_icon_go"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/id_way_special_tour_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/page_slide_item7_more"
+                    android:textColor="#0099CC"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.zhaoqy.app.demo.page.way.view.CustomListView
+                android:id="@+id/id_way_special_tour_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/page_slide_way_icon_note"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/page_slide_item7_image"
+                    android:textColor="#0099CC"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/id_way_special_image2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/page_slide_way_icon_go"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/id_way_special_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/page_slide_item7_more"
+                    android:textColor="#0099CC"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.zhaoqy.app.demo.page.way.view.CustomListView
+                android:id="@+id/id_way_special_image_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_message_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/page_slide_sinaweibo_title_bg" >
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_message_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_title_back" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_message_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <com.zhaoqy.app.demo.page.sinaweibo.view.PullToRefreshListView
+        android:id="@+id/id_sinaweibo_message_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_sinaweibo_message_detail_title"
+        android:layout_marginTop="0dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/page_slide_sinaweibo_devider"
+        android:paddingTop="0dp" />
+
+</RelativeLayout>

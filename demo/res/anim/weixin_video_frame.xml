@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/weixin_chat_voice01"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice02"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice03"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice04"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice05"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice06"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice07"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice08"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice09"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice10"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/weixin_chat_voice11"
+        android:duration="100"/>
+
+</animation-list>

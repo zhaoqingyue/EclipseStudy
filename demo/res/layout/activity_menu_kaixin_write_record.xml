@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/writerecord_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <EditText
+        android:id="@+id/writerecord_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:gravity="top"
+        android:hint="写点记录吧"
+        android:padding="8dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <Button
+            android:id="@+id/writerecord_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_location_selector"
+            android:ellipsize="start"
+            android:gravity="center_vertical"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/writerecord_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_write_add_selector"
+            android:gravity="center"
+            android:text="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/menu_kaixin_write_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/writerecord_face_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu_kaixin_write_face_selector" />
+
+        <ImageButton
+            android:id="@+id/writerecord_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu_kaixin_write_photo_selector" />
+
+        <ImageButton
+            android:id="@+id/writerecord_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu_kaixin_write_locationre_move_selector" />
+
+        <ImageButton
+            android:id="@+id/writerecord_at_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/menu_kaixin_write_at_selector" />
+
+        <TextView
+            android:id="@+id/writerecord_competence"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableRight="@drawable/menu_kaixin_lbs_lock"
+            android:gravity="center"
+            android:padding="8dip"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

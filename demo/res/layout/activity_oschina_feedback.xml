@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/feedback_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="14.0dip"
+        android:paddingRight="14.0dip"
+        android:paddingTop="14.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oschina_blue_bg"
+            android:orientation="vertical"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dip"
+                android:text="意见反馈"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="欢迎您提出宝贵的意见和建议"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/feedback_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:autoLink="web|email"
+                android:gravity="top"
+                android:hint="输入您的意见和建议"
+                android:lines="4"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/feedback_publish"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="30dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/button_enable_green_selector"
+                android:text="提交反馈"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/feedback_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/feedback_scrollview"
+        android:layout_alignTop="@+id/feedback_scrollview"
+        android:background="@drawable/oschina_close_selector"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

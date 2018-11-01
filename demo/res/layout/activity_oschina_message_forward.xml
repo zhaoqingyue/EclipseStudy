@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="7dip" >
+
+        <ImageView
+            android:id="@+id/message_forward_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            style="@style/oschina_detail_head_title"
+            android:text="转发留言" />
+
+        <Button
+            android:id="@+id/message_forward_publish"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/button_enable_green_selector"
+            android:text="发送"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:text="发给："
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/message_forward_receiver"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入对方昵称"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="* 留言内容(最多250个字)"
+            android:textColor="#0e5986"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/message_forward_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip"
+            android:autoLink="web"
+            android:gravity="top"
+            android:hint="请输入留言内容" />
+    </LinearLayout>
+
+</LinearLayout>

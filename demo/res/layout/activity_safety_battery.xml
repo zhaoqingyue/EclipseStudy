@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <FrameLayout
+            android:id="@+id/battery_framlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/safety_clear_battery_battery_nomal" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/safety_clear_battery_battery_bg" />
+
+        <FrameLayout
+            android:id="@+id/battery_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/safety_clear_battery_battery_full" />
+
+        <FrameLayout
+            android:id="@+id/battery_show_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/safety_clear_battery_battery_empty" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/battery_show_1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/safety_clear_battery_battery_bottom" />
+
+        <TextView
+            android:id="@+id/battery_showthinktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/battery_thirdnum"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/safety_clear_battery_result_bg"
+            android:gravity="center"
+            android:text="估计用时"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/battery_fristnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/battery_framlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/safety_clear_battery_number_8"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/battery_secondnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/battery_framlayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/battery_fristnum"
+            android:background="@drawable/safety_clear_battery_number_8"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/battery_secondnum"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/battery_secondnum"
+            android:text="小时"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/battery_thirdnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@drawable/safety_clear_battery_number_8"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/battery_fourthnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/battery_thirdnum"
+            android:background="@drawable/safety_clear_battery_number_8"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/battery_fourthnum"
+            android:text="分"
+            android:textColor="@color/black" >
+        </TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray" 
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/safety_clear_battery_charging_low"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:maxEms="4"
+                android:text="快速充电等待中"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/safety_clear_battery_charging_normal"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:maxEms="4"
+                android:text="补充充电等待中"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/safety_clear_battery_charging_full"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:maxEms="4"
+                android:text="涓流充电等待中"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/battery_smart_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="智能省电"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/battery_smart_power"
+            android:layout_marginLeft="10dp"
+            android:text="自动化全方位省电"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/battery_power_rankings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="耗电排行"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/battery_power_rankings"
+            android:layout_marginLeft="10dp"
+            android:text="全面的软件耗电排行，揪出电老虎"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/battery_cpu_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="CPU省电"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/battery_showtext2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/battery_cpu_power"
+            android:layout_marginLeft="10dp"
+            android:text="智能调控CPU，从根本上降低耗电"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

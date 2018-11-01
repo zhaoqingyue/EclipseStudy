@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photoreply_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <EditText
+        android:id="@+id/photoreply_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:gravity="top"
+        android:padding="8dip"
+        android:hint="回复好友" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/menu_kaixin_write_bg" >
+
+        <Button
+            android:id="@+id/photoreply_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/menu_kaixin_write_face_selector" />
+
+        <Button
+            android:id="@+id/photoreply_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/menu_kaixin_write_at_selector" />
+    </LinearLayout>
+
+</LinearLayout>

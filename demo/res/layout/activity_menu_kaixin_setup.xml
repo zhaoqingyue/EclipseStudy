@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:id="@+id/setup_export"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/setting_item_selector"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_right"
+            android:padding="8dip"
+            android:text="导入好友至手机通讯录"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setup_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_selector"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_right"
+            android:padding="8dip"
+            android:text="查看上传进度"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setup_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_selector"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_right"
+            android:padding="8dip"
+            android:text="用户反馈"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setup_setup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/setting_item_selector"
+        android:orientation="horizontal"
+        android:padding="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/icon_right"
+            android:padding="8dip"
+            android:text="设置"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:gravity="center"
+        android:padding="20.0dip" >
+
+        <Button
+            android:id="@+id/setup_cancel_account"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@drawable/button_bg_selector"
+            android:padding="10.0dip"
+            android:text="注销账户"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

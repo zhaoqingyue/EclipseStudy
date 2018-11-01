@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/page_slide_sinaweibo_title_bg" >
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_home_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_title_edit" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_home_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_home_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_title_refresh" />
+
+        <ProgressBar
+            android:id="@+id/id_sinaweibo_home_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/id_sinaweibo_home_refresh"
+            android:indeterminateDrawable="@drawable/page_slide_sinaweibo_refresh_progressbar"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.zhaoqy.app.demo.page.sinaweibo.view.PullToRefreshListView
+        android:id="@+id/id_sinaweibo_home_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_sinaweibo_home_title"
+        android:layout_marginTop="0dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/page_slide_sinaweibo_devider"
+        android:paddingTop="0dp" />
+
+</RelativeLayout>

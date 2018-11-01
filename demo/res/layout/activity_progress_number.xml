@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar1"
+                style="@style/NumberProgressBar_Default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                custom:progress_current="0" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar2"
+                style="@style/NumberProgressBar_Passing_Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                custom:progress_current="20" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar3"
+                style="@style/NumberProgressBar_Relax_Blue"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="30" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar4"
+                style="@style/NumberProgressBar_Grace_Yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="40" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar5"
+                style="@style/NumberProgressBar_Warning_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="50" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar6"
+                style="@style/NumberProgressBar_Funny_Orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="60" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar7"
+                style="@style/NumberProgressBar_Beauty_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="70" />
+
+            <com.zhaoqy.app.demo.progress.number.NumberProgressBar
+                android:id="@+id/id_progress_number_bar8"
+                style="@style/NumberProgressBar_Twinkle_Night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                custom:progress_current="80" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_pop_file_bg"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cloud_pop_file_delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cloud_pop_file_download"
+            android:gravity="center"
+            android:text="下载"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cloud_pop_file_share"
+            android:gravity="center"
+            android:text="分享"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cloud_pop_file_more"
+            android:gravity="center"
+            android:text="更多"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

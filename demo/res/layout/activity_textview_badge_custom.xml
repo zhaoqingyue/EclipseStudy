@@ -1,0 +1,300 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/default_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/weixin_me_head" />
+
+                <TextView
+                    android:id="@+id/default_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="default" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/position_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Position" />
+
+            <Button
+                android:id="@+id/colour_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Size/Colour" />
+
+            <Button
+                android:id="@+id/anim1_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Animate (default)" />
+
+            <Button
+                android:id="@+id/anim2_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Animate (custom)" />
+
+            <Button
+                android:id="@+id/custom_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom background drawable" />
+
+            <Button
+                android:id="@+id/tab_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tab" />
+
+            <Button
+                android:id="@+id/click_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Clickable" />
+
+            <Button
+                android:id="@+id/increment_target"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Increment" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <com.zhaoqy.app.demo.textview.badgecustom.BadgeView
+                    android:id="@+id/badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="OK" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="Defined in XML layout" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="LinearLayout Container" />
+
+                <ImageView
+                    android:id="@+id/linear_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/relative_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="RelativeLayout Container" />
+
+                <ImageView
+                    android:id="@+id/relative_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@id/relative_label"
+                    android:src="@drawable/ic_launcher" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/frame_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="FrameLayout Container" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/table_target"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="TableLayout Container" />
+                </TableRow>
+            </TableLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <!-- ViewGroup target tests -->
+
+            <LinearLayout
+                android:id="@+id/linear_group_target"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#3366FF"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="LinearLayout Target" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_group_target"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#33CCFF"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="RelativeLayout Target" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_group_target"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#33FFCC"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:text="FrameLayout Target" />
+            </FrameLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tablerow_group_target"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="#33FF66" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="TableRow Target" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_02"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menu_kaixin_guide_page0" />
+
+</RelativeLayout>

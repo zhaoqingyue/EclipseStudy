@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <com.zhaoqy.app.demo.menu.kaixin.view.PhotoGallery
+        android:id="@+id/photoavatardetail_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="24dip"
+        android:paddingTop="24dip"
+        android:spacing="8dip" />
+    
+    <include 
+        android:id="@+id/photoavatardetail_top"
+        layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/photoavatardetail_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:gravity="center"
+            android:padding="4dip"
+            android:text="2012年12月12日"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/photoavatardetail_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/menu_kaixin_image_bg"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_saveas"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu_kaixin_photo_saveas_selector" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_pre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu_kaixin_photo_pre_selector" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_next"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu_kaixin_photo_next_selector" />
+
+            <ImageButton
+                android:id="@+id/photoavatardetail_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/menu_kaixin_photo_comment_icon_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

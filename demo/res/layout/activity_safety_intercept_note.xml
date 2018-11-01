@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/ad_note_rl1"
+        layout="@layout/view_title" />
+
+    <ImageView
+        android:id="@+id/ad_note_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/safety_intercept_loading"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/ad_note_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_note_delete"
+        android:layout_below="@+id/ad_note_rl1" />
+
+    <Button
+        android:id="@+id/ad_note_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/safety_clear_button_selector"
+        android:text="全部删除"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

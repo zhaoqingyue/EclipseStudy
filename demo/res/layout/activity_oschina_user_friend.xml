@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="7dip" >
+
+        <ImageView
+            android:id="@+id/friend_head_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            style="@style/oschina_detail_head_title"
+            android:layout_gravity="center"
+            android:text="@string/user_friend_head_title" />
+
+        <ProgressBar
+            android:id="@+id/friend_head_progress"
+            style="@style/oschina_loading_small"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/friend_type_follower"
+                style="@style/oschina_frame_button"
+                android:text="@string/user_friend_follower" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/oschina_frame_line"
+                android:contentDescription="@string/app_name" />
+
+            <Button
+                android:id="@+id/friend_type_fans"
+                style="@style/oschina_frame_button"
+                android:text="@string/user_friend_fans" />
+        </LinearLayout>
+
+        <com.zhaoqy.app.demo.oschina.view.PullToRefreshListView
+            android:id="@+id/friend_listview"
+            style="@style/oschina_listview" />
+    </LinearLayout>
+
+</LinearLayout>

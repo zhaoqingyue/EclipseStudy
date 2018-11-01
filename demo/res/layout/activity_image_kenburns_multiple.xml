@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ViewSwitcher
+        android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out" >
+
+        <com.zhaoqy.app.demo.picture.kenburns.view.KenBurnsView
+            android:id="@+id/id_picture_kenburns_img0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/picture_circle0" />
+
+        <com.zhaoqy.app.demo.picture.kenburns.view.KenBurnsView
+            android:id="@+id/id_picture_kenburns_img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/picture_circle1" />
+    </ViewSwitcher>
+
+</LinearLayout>

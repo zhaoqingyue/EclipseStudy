@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg" >
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/guide_jd_logo"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/guide_jd_loading_bg"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/splash_loading_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/guide_jd_loading_item"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+</RelativeLayout>

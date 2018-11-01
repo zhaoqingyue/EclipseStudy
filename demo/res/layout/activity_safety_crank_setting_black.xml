@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/windows_color" >
+
+    <include layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/blacklist_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/addblacklist"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/safety_clear_memory_button_selector"
+        android:gravity="center"
+        android:text="添加黑名单"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

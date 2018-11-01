@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/account_dialog_title"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-2.7dip"
+        android:layout_marginTop="-2.7dip"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/account_dialog_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center" />
+
+</LinearLayout>

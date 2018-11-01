@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/view_title" />
+
+    <LinearLayout
+        android:id="@+id/autostart_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="#ECECEC"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/clear_autostart_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#00EE00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个自启软件"
+            android:textColor="#808080" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/clear_autostart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/autostart_content" />
+
+</RelativeLayout>

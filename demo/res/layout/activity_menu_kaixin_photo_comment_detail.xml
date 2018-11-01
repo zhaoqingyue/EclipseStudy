@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/photocommentdetail_display"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="#80333333"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_kaixin_comment_input_bg" >
+
+        <Button
+            android:id="@+id/photocommentdetail_comment"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_kaixin_edit_input_bg"
+            android:gravity="left|center_vertical"
+            android:hint="评论点什么吧"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

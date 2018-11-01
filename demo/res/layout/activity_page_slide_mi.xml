@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relate"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color" >
+    
+    <include 
+        android:id="@+id/id_page_slide_mi_title"
+        layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/id_page_slide_mi_title" >
+
+        <ImageView
+            android:id="@+id/run_image"
+            android:layout_width="1280dip"
+            android:layout_height="fill_parent"
+            android:scaleType="matrix"
+            android:src="@drawable/page_slide_mi_bg"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <com.zhaoqy.app.demo.page.mi.ScrollLayout
+        android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/id_page_slide_mi_title"
+        android:layout_marginTop="40dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dip"
+        android:layout_below="@+id/id_page_slide_mi_title" >
+
+        <TextView
+            android:id="@+id/tv_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/page_slide_mi_laucher_pageid"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dip"
+                android:background="@drawable/page_slide_mi_laucher_icon_download"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dip"
+                android:background="@drawable/page_slide_mi_laucher_icon_fav"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dip"
+                android:background="@drawable/page_slide_mi_laucher_icon_home"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dip"
+                android:background="@drawable/page_slide_mi_laucher_icon_t_chuangyi"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dip"
+                android:background="@drawable/page_slide_mi_laucher_icon_t_meinv"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

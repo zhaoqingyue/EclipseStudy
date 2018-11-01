@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:background="@color/blue1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_way_add_picture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/page_slide_way_icon_picture"
+            android:text="@string/page_slide_item7_picture"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/id_way_add_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/page_slide_way_icon_camera"
+            android:text="@string/page_slide_item7_photo"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/id_way_add_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/page_slide_way_icon_email"
+            android:text="@string/page_slide_item7_text"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</RelativeLayout>

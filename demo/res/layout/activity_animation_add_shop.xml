@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_color" >
+
+    <include
+        android:id="@+id/id_animation_add_shop_title"
+        layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/id_animation_add_shop_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_animation_add_shop_title"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+    <include layout="@layout/view_animation_add_shop_icon" />
+
+</RelativeLayout>

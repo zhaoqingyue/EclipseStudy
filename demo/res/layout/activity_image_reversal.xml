@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue1"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/id_coin_flip_title"
+        layout="@layout/view_title" />
+
+    <FrameLayout
+        android:id="@+id/id_coin_flip_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_coin_flip_title"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/id_coin_flip_layout01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_02" >
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_coin_flip_layout02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_03" >
+            </ImageView>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/view_title" />
+
+    <LinearLayout
+        android:id="@+id/memory_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="#ECECEC"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后台软件"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/clear_memory_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="#00EE00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个，"
+            android:textColor="#808080" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余内存"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/clear_memory_availsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45M"
+            android:textColor="#00EE00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flow_memory_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/clear_memory_btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/safety_clear_memory_button_selector"
+            android:text="一键清理" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/flow_memory_ll"
+        android:layout_below="@id/memory_content" >
+
+        <ListView
+            android:id="@+id/clear_memory_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/clear_memory_rl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/clear_memory_loding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/safety_clear_memory_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clear_memory_loding"
+                android:layout_centerHorizontal="true"
+                android:text="正在加载。。。"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

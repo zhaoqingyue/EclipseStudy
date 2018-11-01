@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/safety_crank_bottom_bg" >
+
+    <include
+        android:id="@+id/id_crank_setting_title"
+        layout="@layout/view_title" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_crank_setting_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/crankset_showblackwhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="黑白名单"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/crankset_showblackwhite"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_top"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="黑名单"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/safety_crank_tabhost_mark_right_arrow"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_write"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_bottom"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="白名单"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/safety_crank_tabhost_mark_right_arrow"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <!-- 拦截服务 -->
+            <TextView
+                android:id="@+id/crankset_showserver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crankset_write"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="拦截服务"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/crankset_showserver"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_top"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_showtext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="开启骚扰拦截"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/crankset_crankset_startcrankmodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_showtext1"
+                    android:layout_marginLeft="20dp"
+                    android:text="已开启"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/safety_crank_setting_switch_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_crankyesorno1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview9"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="标记陌生号码来电"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/safety_crank_setting_switch_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_crankyesorno2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_mode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_showtext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="拦截模式"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/crankset_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_showtext3"
+                    android:layout_marginLeft="20dp"
+                    android:text="普通模式"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/safety_crank_tabhost_mark_right_arrow"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_mode"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_center"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_showtext4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="定时切换拦截模式"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/crankset_cranktime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_showtext4"
+                    android:layout_marginLeft="20dp"
+                    android:text="已关闭"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/safety_crank_tabhost_mark_right_arrow"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_crankyesorno4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_bottom"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_showtext5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="提示加入通讯录"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_showtext5"
+                    android:layout_marginLeft="20dp"
+                    android:maxEms="8"
+                    android:text="通话超过2分钟提示加入通讯录"
+                    android:textSize="12sp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/safety_crank_setting_switch_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/crankset_showcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crankset_crankyesorno5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="电话拦截"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/crankset_showcall"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_top"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_showreturn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="来电拦截返回音"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_showreturn"
+                    android:layout_marginLeft="20dp"
+                    android:text="返回忙音"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/safety_crank_tabhost_mark_right_arrow"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageview10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/crankset_crankyesorno6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <RelativeLayout
+                android:id="@+id/crankset_crankyesorno7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/imageview10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/safety_crank_setting_bottom"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/crankset_open_wait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="开启来电等待"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/crankset_open_wait"
+                    android:layout_marginLeft="20dp"
+                    android:maxEms="8"
+                    android:text="建议开启"
+                    android:textSize="12sp" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/safety_crank_setting_switch_selector"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

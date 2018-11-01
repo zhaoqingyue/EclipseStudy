@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_bar_bg_n"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_face"
+            style="@style/oschina_footbar_image"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_face" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_line" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_photo"
+            style="@style/oschina_footbar_image"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_photo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_line" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_atme"
+            style="@style/oschina_footbar_image"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_atme" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_line" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_software"
+            style="@style/oschina_footbar_image"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/oschina_bar_soft" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/tweet_pub_faces"
+        android:layout_width="fill_parent"
+        android:layout_height="220dip"
+        android:background="#eef1f4"
+        android:columnWidth="50dip"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollingCache="false"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</LinearLayout>

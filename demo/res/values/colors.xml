@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#00111111</color>
+    <color name="white">#ffffff</color> 
+    <color name="black">#ff000000</color>
+    <color name="black1">#7A7E83</color>
+    <color name="black2">#ffeeeeee</color>
+    <color name="red">#FC2828</color>
+    <color name="greeny">#00CB0D</color>
+    
+    <color name="transparency">#00000000</color>
+    <color name="shadow">#1e000000</color>
+    
+    <color name="blue1">#ff00a4e8</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="green">#ff4f8c0b</color>
+    
+	<color name="windows_color">#F5F5F5</color>
+	<color name="blue">#499BF7</color>
+	<color name="yellow">#FFF7D23E</color>
+	<color name="devide_line">#CBCED2</color>
+	
+	<color name="button_unselected">#ff54acea</color>
+    
+    <color name="bar_color">#232325</color>
+    <color name="text_color">#ffffff00</color>
+    
+    
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    
+    
+    <color name="wifi_item_press_color">#ffc9cdd1</color>
+    <color name="wifi_item_normal_color">#fff8f8f8</color>
+    <color name="wifi_light_blue">#33b5e5</color>
+    
+    <color name="dialog_bg">#77000000</color>
+    
+    <color name="dimgrey">#696969</color>
+    <color name="gray">#DBDBDB</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="grey">#808080</color>
+    
+    <!-- <color name="title_text_color">#ffffffff</color> -->
+    <color name="image_loading_bg">#ffefefef</color>
+    <color name="image_loading_bg_night">#ff2b2b2b</color>
+    <color name="list_foot_loading">#ff333333</color>
+    
+    <color name="item_local">#ffffffff</color>
+    <color name="item_local_night">#ff1a1a1a</color>
+    <color name="item_title_normal">#ff444444</color>
+    <color name="item_title_disabled">#ff888888</color>
+    
+    <color name="ss_comment_from">#ff999999</color>
+    <color name="ss_comment_from_night">#ff999999</color>
+    <color name="ss_comment_time">#ff999999</color>
+    <color name="ss_comment_time_night">#ff505050</color>
+    <color name="ss_comment_section">#ff65544a</color>
+    
+    <color name="item_abstract_normal">#ff444444</color>
+    <color name="item_abstract_disabled">#ff929292</color>
+    
+    <color name="default_text_night">#ff747474</color>
+    
+    <color name="feed_hint_normal">#fff0f0f0</color>
+    <color name="feed_hint_normal_night">#ff252525</color>
+    <color name="feed_hint_pressed">#ffeaeaea</color>
+    <color name="feed_hint_pressed_night">#ff191919</color>
+    
+    <color name="divider_day">#ffdddddd</color>
+    
+    
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="activity_bg_color_night">#ff1a1a1a</color>
+    <color name="detail_activity_bg_color">#fff6f7f7</color>
+    <color name="detail_activity_bg_color_night">#ff1a1a1a</color>
+    
+    <color name="dislike_bg_normal">#ff3e3e3e</color>
+    <color name="dislike_bg_pressed">#ff2b2b2b</color>
+    <color name="dislike_bg_normal_night">#ff666666</color>
+    <color name="dislike_bg_pressed_night">#ff505050</color>
+    <color name="dislike_line_color">#ff252525</color>
+    <color name="dislike_line_color_night">#ff000000</color>
+    
+     <color name="left_drawer_no_login_tip_text">#ffb8b8b8</color>
+    <color name="left_drawer_user_name">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_normal">#ffd4d4d4</color>
+    <color name="left_drawer_item_text_pressed">#ff4e4e4e</color>
+    <color name="left_drawer_item_text_tip">#fffe3232</color>
+    <color name="left_drawer_item_bg_normal">#ff393939</color>
+    <color name="left_drawer_item_bg_pressed">#ff292929</color>
+    <color name="left_drawer_item_line">#ff272727</color>
+    <color name="left_drawer_offline_line">#ff4bbff6</color>
+    <color name="left_drawer_offline_hint">#ff6699cc</color>
+    <color name="left_drawer_night_mode_text">#ffb8b8b8</color>
+    
+    
+    <color name="drawer_divider">#ff303030</color>
+    <color name="drawer_right_logout_op_layout_bg">#ffbaf2fe</color>
+    <color name="drawer_right_logout_op_layout_bg_night">#ff4a6166</color>
+    <color name="drawer_right_logout_bg">#ffffffff</color>
+    <color name="drawer_right_logout_bg_night">#ff1a1a1a</color>
+    <color name="drawer_right_logout_hint_text_bg">#ff2bb2cf</color>
+    <color name="drawer_right_logout_hint_text_night">#ff77828f</color>
+    
+    <color name="drawer_text">#ffc3c3c3</color>
+    
+    
+    <color name="bg_row_pressed_start">#ffcccccc</color>
+    <color name="bg_row_pressed_center">#ffcccccc</color>
+    <color name="bg_row_pressed_end">#ffcccccc</color>
+    <color name="bg_row_normal">#ffffffff</color>
+    <color name="bg_row_normal_night">#ff1f2023</color>
+
+    <item name="bg_row_normal_start" type="color">@color/bg_row_normal</item>
+    <item name="bg_row_normal_center" type="color">@color/bg_row_normal</item>
+    <item name="bg_row_normal_end" type="color">@color/bg_row_normal</item>
+
+    <color name="bg_row_border">#ffcacaca</color>
+    <color name="bg_row_pressed_start_night">#ff1a1b1d</color>
+    <color name="bg_row_pressed_center_night">#ff1a1b1d</color>
+    <color name="bg_row_pressed_end_night">#ff1a1b1d</color>
+
+    <item name="bg_row_normal_start_night" type="color">@color/bg_row_normal_night</item>
+    <item name="bg_row_normal_center_night" type="color">@color/bg_row_normal_night</item>
+    <item name="bg_row_normal_end_night" type="color">@color/bg_row_normal_night</item>
+
+    <color name="bg_row_border_night">#ff444444</color>
+    
+    <color name="setting_item_text">#ff333333</color>
+    <color name="setting_copyright">#ff999999</color>
+    <color name="setting_alt_text_normal">#ff666666</color>
+    <color name="setting_alt_text_selected">#ffff0000</color>
+    
+    
+    
+    <color name="bright_foreground_light">#ff000000</color>
+    <color name="bright_foreground_light_inverse">#ffffffff</color>
+    <color name="bright_foreground_light_disabled">#80000000</color>
+    
+    <color name="dim_foreground_light">#808080</color>
+    <color name="dim_foreground_light_disabled">#80323232</color>
+    <color name="dim_foreground_light_inverse">#ff006eaa</color>
+    <color name="dim_foreground_light_inverse_disabled">#80bebebe</color>
+    
+    
+    
+    <color name="half_transparent">#aa000000</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="listitem_transparent">#00000000</color>
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    
+    <color name="dianping_orange">#ff6633</color>
+    <color name="dianping_gray">#696969</color>
+    <color name="dianping_orange_unclickable">#f5d0a8</color>
+    <color name="dianping_orange_pressed">#d25000</color>
+    <color name="dianping_find_search_bg_color">#f0f0f0</color>
+    <color name="dianping_home_search_bg_color">#e64514</color>
+    
+    <color name="milletnotes_highlight">#335b5b5b</color>
+    
+    <color name="pwdnotes_bg_normal">#43A102</color>
+    <color name="pwdnotes_bg_pressed">#a44100</color>
+    <color name="pwdnotes_title_bg_normal">#00000000</color>
+    <color name="pwdnotes_title_bg_pressed">#D4D4D4</color>
+    
+    <color name="calendar_bg">#3500ffff</color>
+    
+    <color name="windnote_red">#ff3300</color>
+    <color name="windnote_orange">#f39629</color>
+    <color name="windnote_yellow">#e8dd34</color>
+    <color name="windnote_green">#43d562</color>
+    <color name="windnote_cyan">#5ce0d8</color>
+    <color name="windnote_blue">#00bbff</color>
+    <color name="windnote_purple">#a959d3</color>
+    <color name="windnote_pink">#ff33cc</color>
+    <color name="windnote_darkgray">#777777</color>
+    <color name="windnote_gray">#F0F0F0</color>
+    <color name="windnote_white">#ffffff</color>
+    
+    <color name="billnote_black">#050505</color>
+    <color name="billnote_blue">#1898df</color>
+    <color name="billnote_line">#d9d9d9</color>
+    
+    <integer-array name="colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </integer-array>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <integer-array name="pocket_background_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+    
+    
+    
+</resources>
+

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f7f7f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianping_home_tittle3_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingTop="1dp"
+                android:src="@drawable/dianping_home_tittle3_clock_end" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianping_home_clock_shape"
+                android:padding="1dp"
+                android:text="12"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/dianping_home_tittle3_countdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianping_home_clock_shape"
+                android:padding="1dp"
+                android:text="29"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/dianping_home_tittle3_countdown" />
+
+            <TextView
+                android:id="@+id/index_home_list3_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianping_home_clock_shape"
+                android:padding="1dp"
+                android:text="30"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="青年餐厅"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:drawableLeft="@drawable/dianping_home_tittle3_brand_price"
+            android:drawablePadding="3dp"
+            android:text="88"
+            android:textColor="@color/dianping_orange"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f7f7f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianping_home_tittle3_promo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="超值工作餐" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:src="@drawable/dianping_tuan_android" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f7f7f7"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dianping_home_tittle3_promo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="超值工作餐" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:src="@drawable/dianping_tuan_android" />
+    </LinearLayout>
+
+</LinearLayout>

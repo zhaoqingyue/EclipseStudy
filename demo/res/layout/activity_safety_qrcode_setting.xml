@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/safety_crank_bottom_bg" >
+
+    <include
+        android:id="@+id/code_setting_title"
+        layout="@layout/view_title" />
+
+    <TextView
+        android:id="@+id/code_setting_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_setting_title"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="二维码设置"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/code_setting_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/code_setting_tv1"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/code_setting_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="拍照时识别二维码"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/code_setting_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/code_setting_tv2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="自动识别拍摄的二维码照片"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/code_setting_tb1"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/safety_crank_setting_switch_selector"
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+</RelativeLayout>

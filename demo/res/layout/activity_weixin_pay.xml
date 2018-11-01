@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E3132" >
+
+    <include
+        android:id="@+id/id_pay_bar"
+        layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/pay_bg_selector"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/id_pay_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pay_default_image" />
+
+        <TextView
+            android:id="@+id/id_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/pay_money"
+            android:textSize="36sp" />
+
+        <TextView
+            style="@style/text_style2"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/pay_text"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

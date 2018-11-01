@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <com.zhaoqy.app.demo.picture.custom.view.CustomShapeImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_sample_1"
+            app:shape="circle" />
+
+        <com.zhaoqy.app.demo.picture.custom.view.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_sample_2" />
+
+        <com.zhaoqy.app.demo.picture.custom.view.RectangleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_sample_3" />
+
+        <com.zhaoqy.app.demo.picture.custom.view.SvgImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_sample_4"
+            app:svg_raw_resource="@raw/shape_star" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black2" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/dianping_my_icon_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+             android:textColor="@color/black"
+            android:text="图趣"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_find_icon_new"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/dianping_my_icon_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+             android:textColor="@color/black"
+            android:text="社区论坛"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="某某护肤利器" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/dianping_my_icon_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+             android:textColor="@color/black"
+            android:text="排行榜"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="校园排行榜...某某驾到" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="11dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/dianping_my_icon_smaller"
+            android:drawablePadding="3dp"
+             android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:text="霸王餐"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="私人定制深...免费体验" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/dianping_my_arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>

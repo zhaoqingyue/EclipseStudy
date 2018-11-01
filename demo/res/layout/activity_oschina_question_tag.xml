@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/question_tag_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/question_tag_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:background="@drawable/oschina_head_home_selector"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/question_tag_head_title"
+            style="@style/oschina_detail_head_title"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/question_tag_head_progress"
+            style="@style/oschina_loading_small"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dip" />
+    </FrameLayout>
+
+    <com.zhaoqy.app.demo.oschina.view.PullToRefreshListView
+        android:id="@+id/question_tag_listview"
+        style="@style/oschina_listview" />
+
+</LinearLayout>

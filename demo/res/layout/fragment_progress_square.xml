@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+
+    <com.zhaoqy.app.demo.progress.square.view.SquareProgressBar
+        android:id="@+id/subi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/progressSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/progressSeekBar"
+        android:gravity="center_vertical"
+        android:text="Progress:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/progressSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/progressDisplay"
+        android:layout_toRightOf="@+id/textView1"
+        android:max="100"
+        android:progress="25" />
+
+    <TextView
+        android:id="@+id/progressDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/progressSeekBar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignTop="@+id/widthSeekBar"
+        android:gravity="center_vertical"
+        android:text="Width:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:id="@+id/widthSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressSeekBar"
+        android:layout_alignLeft="@+id/progressSeekBar"
+        android:layout_alignParentRight="true"
+        android:max="20"
+        android:progress="8" />
+
+</RelativeLayout>

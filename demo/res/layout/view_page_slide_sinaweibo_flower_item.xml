@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="74dp"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/id_sinaweibo_friend_flower_image0"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/page_slide_sinaweibo_new_regist_poppic_default" />
+
+    <ImageView
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/page_slide_sinaweibo_portrait_round_nor" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_friend_flower_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/id_sinaweibo_friend_flower_image0"
+        android:maxLength="14"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/iid_sinaweibo_friend_flower_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/page_slide_sinaweibo_messages_nor" />
+
+    <ImageView
+        android:id="@+id/iid_sinaweibo_friend_flower_image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/iid_sinaweibo_friend_flower_image1"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/page_slide_sinaweibo_mic_nor" />
+
+</RelativeLayout>

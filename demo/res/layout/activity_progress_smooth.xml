@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3B3B3B"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/button_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Make your own!" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Normal indeterminate drawable:" />
+
+            <ProgressBar
+                style="@style/ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateOnly="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="AccelerateInterpolator" />
+
+            <ProgressBar
+                android:id="@+id/progressbar2"
+                style="@style/ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="GPlus" />
+
+            <com.zhaoqy.app.demo.progress.smooth.smooth.SmoothProgressBar
+                style="@style/GPlusProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Google now" />
+
+            <com.zhaoqy.app.demo.progress.smooth.smooth.SmoothProgressBar
+                android:id="@+id/google_now"
+                style="@style/GNowProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Gradient" />
+
+            <com.zhaoqy.app.demo.progress.smooth.smooth.SmoothProgressBar
+                android:id="@+id/gradient"
+                style="@style/GradientProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Circular" />
+
+            <com.zhaoqy.app.demo.progress.smooth.circular.CircularProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cpb_colors="@array/gplus_colors" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pocket" />
+
+            <com.zhaoqy.app.demo.progress.smooth.smooth.SmoothProgressBar
+                android:id="@+id/pocket"
+                style="@style/PocketProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Begin"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Finish"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

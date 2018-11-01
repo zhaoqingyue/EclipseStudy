@@ -1,0 +1,365 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_main_item0"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item0"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_main_item1"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item1"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_main_item2"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item3"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item3"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item4"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item4"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item5"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item5"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item6"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item6"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item7"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item7"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item8"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item8"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item9"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item9"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item17"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item17"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item10"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item10"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item11"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item11"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item12"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item12"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item13"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item13"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item14"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item14"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+       
+            <TextView
+                android:id="@+id/id_main_item15"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item15"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_main_item16"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/main_item_bg_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/main_item16"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:gravity="center"
+                android:padding="20.0dip" >
+
+                <Button
+                    android:id="@+id/id_mian_exit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/button_bg_selector"
+                    android:padding="10.0dip"
+                    android:text="@string/main_exit"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

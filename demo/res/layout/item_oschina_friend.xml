@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="9dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="10dip" >
+
+    <ImageView
+        android:id="@+id/friend_listitem_userface"
+        style="@style/oschina_user_face_image"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/friend_listitem_gender"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/oschina_gender_man" />
+
+            <TextView
+                android:id="@+id/friend_listitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="#0e5986"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/friend_listitem_expertise"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:ellipsize="end"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/register_shape_bg_selector"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- *邮箱 -->
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="@string/register_email"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+			<!-- 请输入邮箱 -->
+            <EditText
+                android:id="@+id/register_input_email"
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="@string/register_input_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/register_shape_line_selector" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- *呢称 -->
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="@string/register_name"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <!-- 请输入呢称 -->
+            <EditText
+                android:id="@+id/register_input_name"
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="@string/register_input_name"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/register_shape_line_selector" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- *密码 -->
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="@string/register_password"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <!-- 请输入密码 -->
+            <EditText
+                android:id="@+id/register_input_password"
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="@string/register_input_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/register_shape_line_selector" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- *确认 密码 -->
+            <TextView
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="15.0dip"
+                android:text="@string/register_confirm_password"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp" />
+
+            <!-- 请再次输入密码 -->
+            <EditText
+                android:id="@+id/register_input_password_again"
+                android:layout_width="1.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_weight="3"
+                android:background="@android:color/white"
+                android:hint="@string/register_input_password_again"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10.0dip"
+                android:textColor="#ff545454"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <!-- 提示 \n带*项为必填项\n填写邮箱方便您找回密码以及了解更多QQ信息 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_tip"
+            android:textColor="@color/button_unselected"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <!-- 注 册 -->
+    <Button
+        android:id="@+id/register_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/register_btn_bg_selector"
+        android:text="@string/register"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp" />
+
+</LinearLayout>

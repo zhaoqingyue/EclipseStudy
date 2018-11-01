@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_gravity="center_vertical"
+        android:background="@color/bar_color" >
+
+        <Button
+            android:id="@+id/id_menu_qq_title"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/menu_qq_title_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:text="@string/menu_item0"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/id_menu_qq_main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="-70dp"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#2ea3fe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_menu_qq_news"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/menu_qq_news"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/id_menu_qq_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/menu_qq_contacts"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/id_menu_qq_dongtai"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/menu_qq_dongtai"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

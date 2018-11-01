@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/software_detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/software_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            style="@style/oschina_detail_head_title"
+            android:layout_gravity="center"
+            android:text="软件详情" />
+
+        <ProgressBar
+            android:id="@+id/software_detail_head_progress"
+            style="@style/oschina_loading_small"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dip" />
+
+        <ImageView
+            android:id="@+id/software_detail_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/oschina_head_favorite_selector"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/software_detail_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:background="@drawable/oschina_head_refresh_selector"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/software_detail_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/software_detail_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/software_detail_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/software_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="3.0dip"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View style="@style/oschina_detail_line" />
+
+            <WebView
+                android:id="@+id/software_detail_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/oschina_tab_bg"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:text="授权协议："
+                        android:textColor="#ff000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/software_detail_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/software_detail_language_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/oschina_line" />
+
+                <LinearLayout
+                    android:id="@+id/software_detail_language_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:text="开发语言："
+                        android:textColor="#ff000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/software_detail_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/software_detail_os_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/oschina_line" />
+
+                <LinearLayout
+                    android:id="@+id/software_detail_os_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:text="操作系统："
+                        android:textColor="#ff000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/software_detail_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/oschina_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8.0dip"
+                        android:text="收录时间："
+                        android:textColor="#ff000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/software_detail_recordtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="15.0dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/software_detail_homepage"
+                    android:layout_width="88.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/button_enable_green_selector"
+                    android:text="软件首页" />
+
+                <Button
+                    android:id="@+id/software_detail_download"
+                    android:layout_width="88.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_enable_green_selector"
+                    android:text="软件下载" />
+
+                <Button
+                    android:id="@+id/software_detail_document"
+                    android:layout_width="88.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_enable_green_selector"
+                    android:text="软件文档" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

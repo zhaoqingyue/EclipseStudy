@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/id_billnotes_note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="我是标题"
+        android:textColor="#595959"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/id_billnotes_note_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_billnotes_note_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="我是内容"
+        android:textColor="#cccccc"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/id_billnotes_note_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text=""
+        android:textColor="#cccccc"
+        android:textSize="15sp" />
+
+</RelativeLayout>

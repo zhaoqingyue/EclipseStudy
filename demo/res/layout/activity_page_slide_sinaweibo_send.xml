@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 -->
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_send_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/page_slide_sinaweibo_title_bg" >
+
+        <TextView
+            android:id="@+id/id_sinaweibo_send_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="发送一条新微薄"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/id_sinaweibo_send_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/page_slide_sinaweibo_button_big_blue"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/id_sinaweibo_send_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/page_slide_sinaweibo_button_big_grey"
+            android:text="取消" />
+    </RelativeLayout>
+
+    <!-- 底部用来显示 表情及@部分内容 -->
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_send_emotions_relative"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/id_sinaweibo_send_emotions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="10dp"
+            android:numColumns="10"
+            android:verticalSpacing="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_sinaweibo_send_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/id_sinaweibo_send_emotions_relative"
+        android:layout_below="@+id/id_sinaweibo_send_title" >
+
+        <EditText
+            android:id="@+id/id_sinaweibo_send_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="微薄内容" />
+
+        <LinearLayout
+            android:id="@+id/id_sinaweibo_send_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/page_slide_sinaweibo_compose_bg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/id_sinaweibo_send_camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:onClick="doclick"
+                android:src="@drawable/page_slide_sinaweibo_compose_camera" />
+
+            <ImageView
+                android:id="@+id/id_sinaweibo_send_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:onClick="doclick"
+                android:src="@drawable/page_slide_sinaweibo_compose_picture" />
+
+            <ImageView
+                android:id="@+id/id_sinaweibo_send_mention"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:onClick="doclick"
+                android:src="@drawable/page_slide_sinaweibo_compose_mention" />
+
+            <ImageView
+                android:id="@+id/id_sinaweibo_send_emotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:onClick="doclick"
+                android:src="@drawable/page_slide_sinaweibo_compose_emoticon" />
+
+            <ImageView
+                android:id="@+id/id_sinaweibo_send_more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                android:onClick="doclick"
+                android:src="@drawable/page_slide_sinaweibo_compose_more" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_sinaweibo_send_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/id_sinaweibo_send_linearlayout"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/page_slide_sinaweibo_compose_locate"
+            android:gravity="center_vertical"
+            android:text="位置信息"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_send_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/id_sinaweibo_send_linearlayout"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/page_slide_sinaweibo_compose_clear"
+            android:text="140"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_send_imgview"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_above="@+id/id_sinaweibo_send_clear"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+</RelativeLayout>

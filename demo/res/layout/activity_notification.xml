@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_notification_show"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_notification_show_alway"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_alway"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_notification_show_intent_action"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_intent_action"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_notification_show_intent_apk"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_intent_apk"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_notification_show_clear_one"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_clear_one"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_notification_show_clear_all"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_clear_all"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_notification_show_custom"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_custom"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <TextView
+                android:id="@+id/id_notification_show_progress"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_progress"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

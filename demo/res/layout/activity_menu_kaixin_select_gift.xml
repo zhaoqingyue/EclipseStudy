@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/selectgift_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dip"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/selectgift_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="8dip"
+                android:src="@drawable/welcome_indicator_focused" />
+
+            <ImageView
+                android:id="@+id/selectgift_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="8dip"
+                android:src="@drawable/welcome_indicator_unfocused" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

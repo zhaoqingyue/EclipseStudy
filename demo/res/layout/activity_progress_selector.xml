@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/view_title" />
+
+    <com.zhaoqy.app.demo.progress.selector.SectorProgress
+        android:id="@+id/spv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:bgColor="#e5e5e5"
+        app:fgColor="#ff765c"
+        app:percent="25"
+        app:startAngle="0" />
+
+    <LinearLayout
+        android:id="@+id/llStartAngle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startAngle: " />
+
+        <SeekBar
+            android:id="@+id/sbStartAngle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="360"
+            android:progress="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llStartAngle"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     percent: " />
+
+        <SeekBar
+            android:id="@+id/sbPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="25" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

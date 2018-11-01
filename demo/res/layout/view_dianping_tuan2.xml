@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_food"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="找美食" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_movie"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="看电影" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_footer"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="做足疗" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_beauty"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="丽人" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_ktv"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="去K歌" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_hotel"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="住酒店" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_shop"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="精品购" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/dianping_nav_more"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="全部分类" />
+    </LinearLayout>
+
+</LinearLayout>

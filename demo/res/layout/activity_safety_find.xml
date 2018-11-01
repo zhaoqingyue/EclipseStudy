@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/safety_find_scanning_bg"
+            android:contentDescription="@string/app_name" />
+
+        <Gallery
+            android:id="@+id/gallery1"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:spacing="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_find_scanning_num3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_find_scanning_num2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_find_scanning_num1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_find_scanning_mask2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_find_scanning_mask1" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/pb_gallery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:layout_above="@+id/tv_hint"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="50dp"
+            android:progressDrawable="@drawable/safety_find_gallery_bg" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="正在加载，请稍候..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</LinearLayout>

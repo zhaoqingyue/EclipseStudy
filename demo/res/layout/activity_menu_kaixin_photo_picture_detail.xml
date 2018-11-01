@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <com.zhaoqy.app.demo.menu.kaixin.view.PhotoGallery
+        android:id="@+id/photopicturedetail_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="24dip"
+        android:paddingTop="24dip"
+        android:spacing="8dip" />
+
+    <RelativeLayout
+        android:id="@+id/photopicturedetail_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/menu_kaixin_image_bg" >
+
+        <ImageButton
+            android:id="@+id/photopicturedetail_saveas"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_kaixin_photo_saveas_selector" />
+
+        <Button
+            android:id="@+id/photopicturedetail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/menu_kaixin_photo_comment_selector"
+            android:padding="8dip"
+            android:text="0"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/photopicturedetail_like"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_kaixin_photo_like_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/photopicturedetail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/menu_kaixin_image_bg" >
+
+            <TextView
+                android:id="@+id/photopicturedetail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="8dip"
+                android:gravity="center"
+                android:maxWidth="80dip"
+                android:minWidth="48dip"
+                android:singleLine="true"
+                android:text="返回"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/photopicturedetail_topeople"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:gravity="center"
+                android:maxWidth="80dip"
+                android:minWidth="48dip"
+                android:singleLine="true"
+                android:text="首页"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/photopicturedetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="1/1"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/photopicturedetail_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:gravity="center"
+            android:padding="4dip"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>

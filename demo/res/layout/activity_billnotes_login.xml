@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="用户名"
+                    android:textColor="#595959"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/id_bill_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/billnotes_login_input_bottom"
+                android:hint="请输入用户名"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="密    码"
+                    android:textColor="#595959"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/id_bill_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/billnotes_login_input_bottom"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/id_bill_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/billnotes_login_button_bg"
+            android:text="登       录"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" >
+
+        <TextView
+            android:id="@+id/id_bill_login_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:text="没有帐号  ?"
+            android:textColor="#595959"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/id_bill_login_direct"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/billnotes_login_round_bg"
+            android:text="直接登录"
+            android:textColor="#595959"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

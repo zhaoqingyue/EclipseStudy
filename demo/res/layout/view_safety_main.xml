@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhaoqy.app.demo.page.safety.view.DragGrid
+        android:id="@+id/id_safety_main_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="50dp"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" />
+
+</RelativeLayout>

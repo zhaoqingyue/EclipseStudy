@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dianping_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/home_top_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/dianping_home_ico_city"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="选择"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:padding="11dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dianping_home_search_selector"
+            android:drawableLeft="@drawable/dianping_home_search_"
+            android:drawablePadding="5dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="14dp"
+            android:paddingTop="7dp"
+            android:text="商户名，地点等..."
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/index_home_tips_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/dianping_home_tips_arrow"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/index_home_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:src="@drawable/dianping_home_icon_add"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:background="@color/white" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/id_dianping_home_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/id_dianping_home_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include layout="@layout/view_dianping_home2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include layout="@layout/view_dianping_home3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <include layout="@layout/view_dianping_home4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="精彩推荐"
+                    android:textSize="15sp" />
+
+                <include layout="@layout/view_dianping_home5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="猜你喜欢"
+                    android:textSize="15sp" />
+
+                <include layout="@layout/view_dianping_home6" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/dianping_home_shadow_shape" />
+
+        <LinearLayout
+            android:id="@+id/index_home_tips_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/dianping_home_tips_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/dianping_home_tips_icon_comment"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="写点评" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/dianping_home_tips_icon_store"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="添加商户" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/dianping_home_tips_icon_scan"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="扫一扫" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

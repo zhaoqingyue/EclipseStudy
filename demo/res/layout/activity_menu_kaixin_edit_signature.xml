@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editsignature_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <EditText
+        android:id="@+id/editsignature_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="top"
+        android:hint="请编辑个性签名"
+        android:padding="8dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/menu_kaixin_write_bg" >
+
+        <Button
+            android:id="@+id/editsignature_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:background="@drawable/menu_kaixin_write_face_selector" />
+    </LinearLayout>
+
+</LinearLayout>

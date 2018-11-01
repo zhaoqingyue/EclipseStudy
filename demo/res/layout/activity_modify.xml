@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_modify_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="267.5dip"
+        android:background="@drawable/modify_user_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45.0dip"
+            android:layout_marginTop="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="21.5sp" />
+
+            <ImageView
+                android:id="@+id/id_modify_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/camera_modify_setting_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.zhaoqy.app.demo.picture.circle.CircleImageView
+                android:id="@+id/id_modify_user_header"
+                android:layout_width="82.0dip"
+                android:layout_height="82.0dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/modify_user_profile"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="62dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/modify_user_edit" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

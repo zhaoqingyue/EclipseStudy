@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <!-- 普通底部导航 -->
+    <LinearLayout
+        android:id="@+id/id_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/id_view_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/id_view_chat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffff"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/weixin_tab_chat"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/id_view_chat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_view_chat_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/weixin_chat"
+                    android:textColor="#9A9A9A"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_view_chat_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/weixin_new"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_view_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/id_view_contact_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffff"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/weixin_tab_contact"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/id_view_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_view_contact_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/weixin_contacts"
+                    android:textColor="#9A9A9A"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_view_contact_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/weixin_new"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_view_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked"
+            android:padding="3dp" >
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/id_view_find_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffff"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/weixin_tab_find"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/id_view_find_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/id_view_find_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/weixin_discover"
+                    android:textColor="#9A9A9A"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_view_find_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/weixin_new"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_view_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onTabClicked"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/id_view_me_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/weixin_tab_profile"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/id_view_me_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_view_me_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/weixin_me"
+                android:textColor="#9A9A9A"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

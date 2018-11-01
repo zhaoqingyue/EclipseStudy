@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/detail_activity_home_list1_rb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dianping_category_tab_left_selector"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="商户"
+                android:textColor="@color/dianping_category_tab_color_selector" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dianping_category_tab_right_selector"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="团购"
+                android:textColor="@color/dianping_category_tab_color_selector" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/detail_activity_home_list1_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:gravity="center_vertical"
+            android:padding="9dp"
+            android:src="@drawable/dianping_login_back" />
+
+        <FrameLayout
+            android:id="@+id/detail_activity_home_list1_search_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dianping_category_icon_search" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/view_dianping_category1" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <include layout="@layout/view_dianping_category2" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include layout="@layout/view_dianping_category_filter" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/dianping_home_shadow_shape" />
+    </FrameLayout>
+
+</LinearLayout>

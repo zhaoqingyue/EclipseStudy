@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color" >
+    
+    <include
+        layout="@layout/view_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/menu_translate_tip"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.zhaoqy.app.demo.menu.translate.TranslateMenuView
+        android:id="@+id/ribbonMenuView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

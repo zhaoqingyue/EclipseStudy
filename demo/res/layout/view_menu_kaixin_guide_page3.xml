@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_01" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="20dp"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/menu_kaixin_guide_checkbox_selector"
+            android:checked="true"
+            android:paddingLeft="25dip"
+            android:shadowColor="#ffffffff"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="通知好友我在开心"
+            android:textColor="#ffb4b4b4"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/id_menu_kaixin_guide_open"
+            android:layout_width="216dip"
+            android:layout_height="45dip"
+            android:background="@drawable/button_bg_selector"
+            android:shadowColor="#7f000000"
+            android:layout_marginTop="10dp"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="开启"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/id_menu_kaixin_guide3_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="20dip"
+            android:src="@drawable/menu_kaixin_guide_page3" />
+    </LinearLayout>
+
+</RelativeLayout>

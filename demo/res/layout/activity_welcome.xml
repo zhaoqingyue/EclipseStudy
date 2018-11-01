@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <com.zhaoqy.app.demo.welcome.Scroll
+        android:id="@+id/id_welcome_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <!-- 图片1 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_01" >
+
+            <!-- 微信，不只是个聊天工具 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="89dp"
+                android:text="@string/welcome_text1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 图片2 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_02" >
+
+            <!-- 第一次，你可以使用透明背景的动画表情，来表达你此刻的心情 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dp"
+                android:gravity="center_horizontal"
+                android:text="@string/welcome_text2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 图片3 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_03" />
+
+        <!-- 图片4 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_04" />
+
+        <!-- 图片5 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_05" />
+
+        <!-- 图片6 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_06" />
+
+        <!-- 图片7 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_07" />
+
+        <!-- 图片8 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_08" />
+
+        <!-- 图片9 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/welcome_01" >
+
+            <!-- 开始我的微信生活 -->
+            <Button
+                android:id="@+id/id_welcome_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="98dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/welcome_start_selector"
+                android:text="@string/welcome_start"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </com.zhaoqy.app.demo.welcome.Scroll>
+
+    <LinearLayout
+        android:id="@+id/id_welcome_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24.0dip"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <!-- 指示器1 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器2 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器3 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器4 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器5 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器6 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器7 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器8 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+
+        <!-- 指示器9 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5.0dip"
+            android:src="@drawable/welcome_indicator_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

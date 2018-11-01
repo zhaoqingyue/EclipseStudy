@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.zhaoqy.app.demo"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windows_color" >
+    
+    <include layout="@layout/view_title" />
+
+    <com.zhaoqy.app.demo.animation.CircleLayout
+        android:id="@+id/id_animation_circle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/id_animation_circle_layout_selected"
+        android:layout_gravity="center_horizontal"
+        circle:firstChildPosition="South"
+        circle:isRotating="true"
+        circle:rotateToCenter="true" >
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_facebook_image"
+            circle:name="@string/animation_custom_circle_facebook"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/animation_custom_circleimage_facebook_icon" />
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_myspace_image"
+            circle:name="@string/animation_custom_circle_myspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_custom_circleimage_myspace_icon" />
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_google_image"
+            circle:name="@string/animation_custom_circle_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_custom_circleimage_google_icon" />
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_linkedin_image"
+            circle:name="@string/animation_custom_circle_linkedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_custom_circleimage_linkedin_icon" />
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_twitter_image"
+            circle:name="@string/animation_custom_circle_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_custom_circleimage_twitter_icon" />
+
+        <com.zhaoqy.app.demo.animation.CircleImageView
+            android:id="@+id/id_animation_circle_wordpress_image"
+            circle:name="@string/animation_custom_circle_wordpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/animation_custom_circleimage_wordpress_icon" />
+    </com.zhaoqy.app.demo.animation.CircleLayout>
+
+    <TextView
+        android:id="@+id/id_animation_circle_layout_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

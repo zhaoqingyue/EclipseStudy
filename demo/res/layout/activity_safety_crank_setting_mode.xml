@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/windows_color" >
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/safety_crank_bottom_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="标准模式"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxEms="10"
+                        android:text="拦截黑名单，拦截陌生短息，智能标识垃圾短息"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="只拦截黑名单"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxEms="10"
+                        android:text="只拦截黑名单号码的电话和短息"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="只接受通讯录"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxEms="10"
+                        android:text="只接受通讯录的号码和短息"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="只接受白名单"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxEms="10"
+                        android:text="只接受被名单的号码和短息"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="全部拦截"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:maxEms="10"
+                        android:text="拦截所有的电话和短息"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

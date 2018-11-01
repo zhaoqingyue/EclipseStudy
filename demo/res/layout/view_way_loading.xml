@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_view_way_loader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/id_view_way_load_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/id_view_way_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_view_way_load_image"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="none"
+        android:singleLine="true"
+        android:text="正在拼命加载数据中…"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/codemain_title"
+        layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/codemain_title" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.zhaoqy.app.demo.page.safety.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/codemain_kuang"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/safety_qrcode_scan_frame"
+        android:contentDescription="@string/app_name" />
+
+    <ProgressBar
+        android:id="@+id/codemain_pb"
+        style="@style/safety_qrcode_progressbar"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/safety_qrcode_scan_round_bg" />
+
+    <LinearLayout
+        android:id="@+id/codemain_photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/safety_qrcode_scan_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="从相册选择二维码图片"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

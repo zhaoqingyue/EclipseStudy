@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/windows_color" >
+
+    <include layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/crank_sms_listview2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/safety_crank_bottom_bg"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/crank_sms_report"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@drawable/safety_clear_memory_button_selector"
+                android:gravity="center"
+                android:text="举报"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/crank_sms_allsms"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/safety_clear_memory_button_selector"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

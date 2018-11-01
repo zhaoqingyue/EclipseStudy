@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/view_way_loading" />
+
+    <LinearLayout
+        android:id="@+id/id_way_special_detail_tour_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/page_slide_way_bottom_bg" >
+
+            <TextView
+                android:id="@+id/id_way_special_detail_tour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#99CCFF"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/id_way_special_detail_tour_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

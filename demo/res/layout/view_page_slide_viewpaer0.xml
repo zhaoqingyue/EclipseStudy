@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <LinearLayout
+            android:id="@+id/viewpage0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_picture"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_take_pic"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_location"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_send_file" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_file"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/viewpage4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_audio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_voice"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/weixin_chat_tool_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_video"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_douban" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share0"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_kaixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share1"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

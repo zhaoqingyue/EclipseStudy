@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/id_qrcode_scan_surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.zhaoqy.app.demo.camera.qrcode.view.QRCodeScanView
+        android:id="@+id/id_qrcode_scan_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <include
+            android:id="@+id/id_qrcode_scan_title"
+            layout="@layout/view_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="@string/scan_tip"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="0.4"
+            android:background="@color/black"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/id_qrcode_scan_pictrue"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/sacn_pictrue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/scan_picture"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/id_qrcode_scan_flash"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/scan_light" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/scan_flash"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/id_qrcode_scan_qrcode"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:background="@drawable/scan_ercode" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/scan_qrcode"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

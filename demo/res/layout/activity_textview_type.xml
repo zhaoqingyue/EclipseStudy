@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.zhaoqy.app.demo.textview.typetextview.TypeTextView
+            android:id="@+id/id_typetextview_text"
+            style="@style/text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text=""
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_typetextview_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Start"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

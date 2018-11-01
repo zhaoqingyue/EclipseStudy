@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:text="@string/index_add_contacts_name"
+            android:textColor="#C48550" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/contacts_redline"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/index_add_contacts_name_hint"
+            android:lines="1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_name_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dip"
+            android:background="@drawable/contacts_bg_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:text="@string/index_add_contacts_phone"
+            android:textColor="#C48550" />
+
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/contacts_redline"
+            android:contentDescription="@string/app_name" />
+
+        <EditText
+            android:id="@+id/add_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="@string/index_add_contacts_phone_hint"
+            android:inputType="phone"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/add_phone_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dip"
+            android:background="@drawable/contacts_bg_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black2" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_notification_show_custom_notification"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_custom_notification"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_notification_show_custom_notification_btn"
+                style="@style/text_style"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="@string/notification_show_custom_notification_btn"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+            
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textColor="#000000"
+                android:text="@string/notification_show_custom_tip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

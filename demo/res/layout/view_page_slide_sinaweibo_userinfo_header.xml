@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/page_slide_sinaweibo_userinfo_header_bg" >
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_userinfo_header_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_new_regist_poppic_default" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_userinfo_header_dsec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id_sinaweibo_userinfo_header_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="用户信息简介"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/btlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/id_sinaweibo_userinfo_header_dsec"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/page_slide_sinaweibo_userinfo_header_button_bg"
+            android:drawableLeft="@drawable/page_slide_sinaweibo_userinfo_header_add"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:text="加关注"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_userinfo_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/id_sinaweibo_userinfo_header_icon"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/id_sinaweibo_userinfo_header_icon"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLength="14"
+            android:singleLine="true"
+            android:text="名字"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/id_sinaweibo_userinfo_header_horizontalscrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_sinaweibo_userinfo_header_detail"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="详细           信息"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/id_sinaweibo_userinfo_header_guanzhu"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="110 \n关注"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/id_sinaweibo_userinfo_header_fensi"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="110 \n粉丝"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/id_sinaweibo_userinfo_header_zan"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="30\n 赞"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="话题"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="相册"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="游戏"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="书包"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/page_slide_sinaweibo_userinfo_header_shadow"
+                android:gravity="center"
+                android:text="音乐"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

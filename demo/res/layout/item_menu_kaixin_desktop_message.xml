@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/message_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/message_item_messagecount"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textColor="#999999"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name"
+        android:paddingLeft="10dip"
+        android:paddingRight="20dip"
+        android:src="@drawable/icon_right" />
+
+</LinearLayout>

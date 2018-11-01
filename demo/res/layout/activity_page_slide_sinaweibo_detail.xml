@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/page_slide_sinaweibo_compose_bg" >
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_title_back" />
+
+        <TextView
+            android:id="@+id/id_sinaweibo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="微博正文"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/id_sinaweibo_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/page_slide_sinaweibo_title_home" />
+
+        <ProgressBar
+            android:id="@+id/id_sinaweibo_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/id_sinaweibo_refresh"
+            android:indeterminateDrawable="@drawable/page_slide_sinaweibo_refresh_progressbar"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_sinaweibo_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

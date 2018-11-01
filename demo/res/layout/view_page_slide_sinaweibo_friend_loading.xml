@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#f0f0f0"
+    android:gravity="center_vertical" >
+
+    <ProgressBar
+        android:id="@+id/id_sinaweibo_friend_progressbar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="20dp"
+        android:indeterminateDrawable="@drawable/page_slide_sinaweibo_refresh_progressbar" />
+
+    <TextView
+        android:id="@+id/id_sinaweibo_friend_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="18dp"
+        android:text="@string/page_slide_item8_loading"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

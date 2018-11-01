@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <ImageView
+            android:id="@+id/frame_software_head_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/frame_software_head_title"
+            style="@style/oschina_detail_head_title"
+            android:layout_gravity="center"
+            android:text="开源软件库" />
+
+        <ProgressBar
+            android:id="@+id/frame_software_head_progress"
+            style="@style/oschina_loading_small"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/frame_btn_software_catalog"
+            style="@style/oschina_frame_button"
+            android:text="分类" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_software_recommend"
+            style="@style/oschina_frame_button"
+            android:text="推荐" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_software_lastest"
+            style="@style/oschina_frame_button"
+            android:text="最新" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_software_hot"
+            style="@style/oschina_frame_button"
+            android:text="热门" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_software_china"
+            style="@style/oschina_frame_button"
+            android:text="国产" />
+    </LinearLayout>
+
+    <com.zhaoqy.app.demo.oschina.view.ScrollLayout
+        android:id="@+id/frame_software_scrolllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/frame_software_listview_catalog"
+            style="@style/oschina_listview" />
+
+        <ListView
+            android:id="@+id/frame_software_listview_tag"
+            style="@style/oschina_listview" />
+
+        <com.zhaoqy.app.demo.oschina.view.PullToRefreshListView
+            android:id="@+id/frame_software_listview"
+            style="@style/oschina_listview" />
+    </com.zhaoqy.app.demo.oschina.view.ScrollLayout>
+
+</LinearLayout>

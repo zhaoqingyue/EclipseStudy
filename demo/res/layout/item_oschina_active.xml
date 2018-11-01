@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="7dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="8dip" >
+
+    <ImageView
+        android:id="@+id/active_listitem_userface"
+        style="@style/oschina_user_face_image"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/active_listitem_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="#ff9da19e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/active_listitem_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textColor="#ff000000"
+            android:textColorLink="#0e5986"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/active_listitem_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/oschina_image_loading"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/active_listitem_reply"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/oschina_review_bg_top"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/active_listitem_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:textColor="#ff9da19e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/active_listitem_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff9da19e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/oschina_comment_count_icon" />
+
+            <TextView
+                android:id="@+id/active_listitem_commentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:textColor="#ff9da19e"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/active_listitem_redirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/oschina_redirect_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

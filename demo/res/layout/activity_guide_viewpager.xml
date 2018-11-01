@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:gravity="center_horizontal" >
+
+    <include 
+        android:id="@+id/id_guide_viewpager_title"
+        layout="@layout/view_title" />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_guide_viewpager_title" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignBottom="@id/id_guide_viewpager"
+        android:background="@color/blue1"
+        android:orientation="vertical"
+        android:padding="5dip"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/id_guide_viewpager_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/id_guide_viewpager_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

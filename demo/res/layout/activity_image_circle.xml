@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/id_circle_title"
+        layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFEEEEEE"
+        android:padding="16dp" >
+
+        <com.zhaoqy.app.demo.picture.circle.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/picture_circle0"
+            app:border_color="#FF222222"
+            app:border_width="2dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF222222"
+        android:padding="16dp" >
+
+        <com.zhaoqy.app.demo.picture.circle.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/picture_circle1"
+            app:border_color="#FFEEEEEE"
+            app:border_width="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

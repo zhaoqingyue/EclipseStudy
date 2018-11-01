@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cloud_file_bottom_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_file_bottom"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cloud_file_bottom_upload"
+                android:text="上传"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cloud_file_bottom_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_file_bottom"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cloud_file_bottom_share"
+                android:text="分享"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cloud_file_bottom_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_file_bottom"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cloud_file_bottom_download"
+                android:text="下载"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cloud_file_bottom_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_file_bottom"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cloud_file_bottom_more"
+                android:text="更多"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_files"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/ll_bottom"
+        android:layout_alignParentTop="true"
+        android:divider="@color/light_gray"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

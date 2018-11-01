@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/oschina_about"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oschina_head_bg" >
+
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/about_title"
+            style="@style/oschina_detail_head_title"
+            android:layout_centerInParent="true"
+            android:text="关于" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="200dip"
+        android:text="OSChina.NET for Android"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="160dip"
+        android:text="版本：1.0.0"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="60dip"
+        android:padding="40dp" >
+
+        <Button
+            android:id="@+id/about_update"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button_enable_green_selector"
+            android:text="检查新版本" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="30dip"
+        android:text="Copyright ©2008-2012 奥思网络版权所有"
+        android:textColor="@color/black" />
+
+</FrameLayout>

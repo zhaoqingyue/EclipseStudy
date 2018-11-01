@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/id_custom_gallery_list_title"
+        layout="@layout/view_title" />
+
+    <GridView
+        android:id="@+id/id_custom_gallery_list_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_custom_gallery_list_title"
+        android:layout_centerHorizontal="true"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:verticalSpacing="8dp" />
+
+</RelativeLayout>

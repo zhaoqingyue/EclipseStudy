@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blog_detail_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oschina_head_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip" >
+
+    <ImageView
+        android:id="@+id/blog_detail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/icon_back"
+        android:clickable="true"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/blog_detail_head_title"
+        style="@style/oschina_detail_head_title"
+        android:layout_gravity="center"
+        android:text="博客正文" />
+
+    <ProgressBar
+        android:id="@+id/blog_detail_head_progress"
+        style="@style/oschina_loading_small"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="5dip" />
+
+    <ImageView
+        android:id="@+id/blog_detail_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="@drawable/oschina_head_refresh_selector"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+</FrameLayout>

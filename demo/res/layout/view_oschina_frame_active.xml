@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/frame_btn_active_lastest"
+            style="@style/oschina_frame_button"
+            android:text="@string/frame_title_active_lastest" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_active_atme"
+            style="@style/oschina_frame_button"
+            android:text="@string/frame_title_active_atme" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_active_comment"
+            style="@style/oschina_frame_button"
+            android:text="@string/frame_title_active_comment" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_active_myself"
+            style="@style/oschina_frame_button"
+            android:text="@string/frame_title_active_myself" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/oschina_frame_line"
+            android:contentDescription="@string/app_name" />
+
+        <Button
+            android:id="@+id/frame_btn_active_message"
+            style="@style/oschina_frame_button"
+            android:text="@string/frame_title_active_message" />
+    </LinearLayout>
+
+    <com.zhaoqy.app.demo.oschina.view.PullToRefreshListView
+        android:id="@+id/frame_listview_active"
+        style="@style/oschina_listview" />
+
+    <com.zhaoqy.app.demo.oschina.view.PullToRefreshListView
+        android:id="@+id/frame_listview_message"
+        style="@style/oschina_listview"
+        android:divider="@null"
+        android:visibility="gone" />
+
+</LinearLayout>

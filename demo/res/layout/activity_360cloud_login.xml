@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_title_bg_gray"
+        android:gravity="center"
+        android:text="登录360云盘"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/cloud_login_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帐号："
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="请输入您的手机号\邮箱\用户名"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/ll_account"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/cloud_login_border"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textColor="@color/grey" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请输入密码"
+            android:singleLine="true"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/id_cloud_show"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/cloud_show_selector"
+            android:text="显示"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_password"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="15dp"
+        android:text="忘记密码"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_forget_password"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="13dp" >
+
+        <Button
+            android:id="@+id/id_cloud_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_account_selector"
+            android:gravity="center"
+            android:text="快速注册"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/id_cloud_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/cloud_register_selector"
+            android:gravity="center"
+            android:text="立即登录"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

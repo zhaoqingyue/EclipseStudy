@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/billnote_account_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="转 账"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/billnote_account_assets"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/billnotes_acount_assets_shape" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="总资产"
+                android:textColor="#595959"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/billnote_account_assets_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="0.0"
+                android:textColor="#595959"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billnote_account_cash"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/billnote_account_assets"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/billnotes_acount_cash_shape" >
+
+            <ImageView
+                android:id="@+id/billnote_account_cash_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/billnotes_account_cash"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/billnote_account_cash_icon"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="bottom"
+                android:text="现金余额"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/billnote_account_cash_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billnote_account_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/billnote_account_cash"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/billnotes_acount_deposit_shape" >
+
+            <ImageView
+                android:id="@+id/billnote_account_deposit_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/billnotes_account_deposit"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/billnote_account_deposit_icon"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="bottom"
+                android:text="储蓄卡余额"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/billnote_account_deposit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billnote_account_credit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/billnote_account_deposit"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/billnotes_acount_credit_shape" >
+
+            <ImageView
+                android:id="@+id/billnote_account_credit_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/billnotes_account_deposit"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/billnote_account_credit_icon"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="bottom"
+                android:text="信用卡余额"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/billnote_account_credit_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/billnote_account_airpay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/billnote_account_credit"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/billnotes_acount_airpay_shape" >
+
+            <ImageView
+                android:id="@+id/billnote_account_airpay_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/billnotes_account_alipay"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/billnote_account_airpay_icon"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:gravity="bottom"
+                android:text="网络账户余额"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/billnote_account_airpay_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

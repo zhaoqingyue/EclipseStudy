@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/viewpage0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share2"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_qzone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share3"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_renren" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share4"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/viewpage3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_sinaweibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share5"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:visibility="visible"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/viewpage4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_tencentweibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share6"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share7"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/page_slide_way_logo_wechatmoments" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share8"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/viewpage7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_logo_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin_attach_share9"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

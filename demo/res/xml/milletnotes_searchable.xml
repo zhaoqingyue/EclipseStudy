@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/milletnote_search_hint"
+    android:includeInGlobalSearch="true"
+    android:label="@string/milletnote_search_label"
+    android:searchMode="queryRewriteFromText"
+    android:searchSettingsDescription="@string/milletnote_search_description"
+    android:searchSuggestAuthority="notes"
+    android:searchSuggestIntentAction="android.intent.action.VIEW" />

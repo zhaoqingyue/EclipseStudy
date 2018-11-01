@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_linearlayout_footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/oschina_bar_bg_n"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/main_footbar_news"
+        style="@style/oschina_footbar_radio"
+        android:drawableTop="@drawable/oschina_bar_news" />
+
+    <ImageView
+        style="@style/oschina_footbar_line"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/oschina_bar_line" />
+
+    <RadioButton
+        android:id="@+id/main_footbar_question"
+        style="@style/oschina_footbar_radio"
+        android:drawableTop="@drawable/oschina_bar_question" />
+
+    <ImageView
+        style="@style/oschina_footbar_line"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/oschina_bar_line" />
+
+    <RadioButton
+        android:id="@+id/main_footbar_tweet"
+        style="@style/oschina_footbar_radio"
+        android:drawableTop="@drawable/oschina_bar_tweet" />
+
+    <ImageView
+        style="@style/oschina_footbar_line"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/oschina_bar_line" />
+
+    <RadioButton
+        android:id="@+id/main_footbar_active"
+        style="@style/oschina_footbar_radio"
+        android:drawableTop="@drawable/oschina_bar_active" />
+
+    <ImageView
+        style="@style/oschina_footbar_line"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/oschina_bar_line" />
+
+    <ImageView
+        android:id="@+id/main_footbar_setting"
+        style="@style/oschina_footbar_image"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/oschina_bar_more" />
+
+</LinearLayout>

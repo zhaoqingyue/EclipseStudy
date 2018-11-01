@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff54acea"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue1"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp"
+        android:weightSum="5" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/page_slide_sinaweibo_find_shake_nor"
+            android:gravity="center_horizontal"
+            android:text="@string/page_slide_item8_shake"
+            android:textColor="#000000"  />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/page_slide_sinaweibo_find_contact_nor"
+            android:gravity="center_horizontal"
+            android:text="@string/page_slide_item8_contact"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/page_slide_sinaweibo_find_nearby_nor"
+            android:gravity="center_horizontal"
+            android:text="@string/page_slide_item8_nearby"
+            android:textColor="#000000"  />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/page_slide_sinaweibo_find_weibo_nor"
+            android:gravity="center_horizontal"
+            android:text="@string/page_slide_item8_weibo"
+            android:textColor="#000000"  />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/page_slide_sinaweibo_find_qrcode_nor"
+            android:gravity="center_horizontal"
+            android:text="@string/page_slide_item8_qrcode"
+            android:textColor="#000000"  />
+    </LinearLayout>
+
+    <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/id_sinaweibo_friend_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+    </FrameLayout>  -->
+
+</LinearLayout>

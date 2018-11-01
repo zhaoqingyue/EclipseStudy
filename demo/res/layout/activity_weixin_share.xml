@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/windows_color" >
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/id_share_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:hint="这一刻的想法..."
+                android:paddingLeft="20dp"
+                android:textColorHint="#DDDDDD"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:id="@+id/id_share_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                        <Button
+                            android:id="@+id/id_share_add"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_margin="5.0dip"
+                            android:background="@drawable/weixin_share_add" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_share_location"
+                style="@style/text_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_share_location"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="所在位置"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="20dp"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_share_look"
+                style="@style/text_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_share_look"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="谁可以看"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <TextView
+                android:id="@+id/id_share_tip"
+                style="@style/text_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/weixin_share_remind"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/icon_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:text="提醒谁看"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/black2" />
+
+            <ImageView
+                android:id="@+id/id_share_qzone"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/weixin_share_qq_space_u"
+                android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

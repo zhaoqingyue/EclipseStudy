@@ -1,0 +1,2341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="com.zhaoqy.app.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="com.zhaoqy.app.demo.DemoApplication" >
+        <activity
+            android:name="com.zhaoqy.app.demo.welcome.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.about.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.qq.LoginQQActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.kaixin.LoginKaixinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.weixin.LoginWeixinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.email.activity.LoginEmailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.login.email.activity.LoginEmailHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.register.RegisterQQActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.register.RegisterWeixinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.WeiXinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+			android:name="com.zhaoqy.app.demo.weixin.ui.activity.ChatActivity"
+			android:launchMode="singleTop"
+            android:screenOrientation="portrait" 
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+			android:windowSoftInputMode="adjustResize|adjustPan"  >
+		</activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.PayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.SetMoneyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.MyCodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.FriendCircleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.VideoCallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.VoiceCallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.ShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.weixin.ui.activity.BaiduMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- ++++++++++ oschina +++++++++++  -->
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaAboutActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaBlogDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaCommentPubActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaFeedBackActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HalfTranslucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaImageActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HalfTranslucent" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaImageZoomActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaLoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HalfTranslucent"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaMainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaMessageDetailActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaMessageForwardActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaMessagePubActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"
+            android:windowSoftInputMode="stateVisible|adjustResize"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaNewsDetailActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaQuestionDetailActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaQuestionPubActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaQuestionTagActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaSearchActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaSettingActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Preference"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaSoftwareDetailActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop"   >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaSoftwareLibActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaTweetDetailActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SlideTop" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaTweetPubActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaUserCenterActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaUserFavoriteActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaUserFriendActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.oschina.activity.OSChinaUserInfoActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ZoomLight"  >
+        </activity>
+        <!-- ++++++++++ oschina +++++++++++  -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.CameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.takepicture.activity.TakePictureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.takepicture.activity.CustomCameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.takepicture.activity.EndCameraActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.qrcode.activity.QRCodeScanActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.gallery.activity.GalleryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.gallery.activity.CustomGalleryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.gallery.activity.CustomGalleryListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.gallery.activity.PhotoBrowerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.camera.modify.activity.ModifyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.PictureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        
+        
+        <!-- <activity
+            android:name="com.zhaoqy.app.demo.picture.viewpager.ImageViewPagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.carousel.CarouselImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.round.RoundImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.circle.CircleImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.oval.activity.RoundOvalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.reversal.ReversalImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+   
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.process.ImageProcessActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.qrcode.activity.QrCodeImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.kenburns.activity.KenBurnsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.kenburns.activity.SingleImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.kenburns.activity.MultiImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.kenburns.activity.FromUrlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.custom.CustomImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.photoview.activity.PhotoMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.photoview.activity.PhotoImgActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.photoview.activity.PhotoClickImgActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.photoview.activity.PhotoViewpagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.photoview.activity.PhotoBrowseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.textdrawable.activity.TextDrawableActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.picture.textdrawable.activity.TextDrawableListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.wifi.WiFiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.wifi.wifihot.activity.WiFiHotActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationBasicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationRunActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationCustomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationFrameLayoutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationCircleMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationWaterWaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationSoundWaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationImageYSlideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationImageCustomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationOutTicketActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationAddShopActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationYouKuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationScaneActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationtaobaoMenu1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.animation.AnimationtaobaoMenu2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.index.IndexActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.index.contacts.activity.AddContactsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.index.contacts.activity.ContactsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.index.indexable.activity.IndexableActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.index.search.activity.IndexSearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.ProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.number.NumberProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.square.SquareProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.smooth.activity.SmoothProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.smooth.activity.SmoothProgressMakeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.button.ButtonProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.wheel.WheelProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.color.ColorRingProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.progress.selector.SectorProgressActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.MenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.qq.MenuQQActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.qq.MenuQQSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.headline.activity.HeadLineActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.headline.activity.MenuSettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.translate.MenuTranslateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainUserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified|adjustResize">
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainPhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainViewedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainGiftsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainRecommendActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MainLbsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinAboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinAlbumActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinChangeWallpagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinChatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinChatLogsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinCheckInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinContactsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinDeletePhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinDiaryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinDiaryDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinEditSignatureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinFriendInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinGuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinImageFilterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinImageFilterCropActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinImageFilterEffectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinImageFilterFaceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinImageFilterFrameActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhoneAlbumActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoAvatarDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoCommentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoCommentDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoPictureDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoReplyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinPhotoShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSelectFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSelectGiftActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSendGiftActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSetUpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSetUpExportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinSetUpSettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>  
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinVisitorsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinVoiceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinWriteDiaryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.kaixin.activity.MenuKaixinWriteRecordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.cloud.activity.CloudSplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.cloud.activity.CloudLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.menu.cloud.activity.CloudMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> 
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.PageSlideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerSlideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerSlide2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerGridViewSlideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerGridViewSlideStudyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerGridViewSlideOtherActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.viewpager.activity.ViewPagerScrollListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.mi.LaucherMiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- <activity
+            android:name="com.zhaoqy.app.demo.page.activity.Launcher360Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity> -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.mushroom.LauncherMushroomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.way.activity.LauncherWayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.way.activity.WayAddActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareTheme" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.way.activity.WayChoiceDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.way.activity.WayShareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShareTheme" >
+            <intent-filter>
+                <data
+                    android:host="starActivity"
+                    android:scheme="kakaoTalkTest" />
+                
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        
+        <activity android:name="com.freedoman.fingerlife.activities.UserCenterActivity" />
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.way.activity.WaySpecailDetailTourActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboGuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboHomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboFriendActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboSquarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboMoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboSendActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboImageDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboUserInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboMessageDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.sinaweibo.activity.SinaWeiboFriendMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- ************************************360安全卫士******************************************** -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyBatteryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearAutoStartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearGarbageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearGarbageContentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearMemoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearPackageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearPrivacyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyClearTimeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankMarkAdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankMarkCallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankMarkEatActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankMarkHouseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankMarkTagActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankSettingBlackListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankSettingModeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankSettingWhiteListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankTabhostCallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankTabhostMarkActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankTabhostSmsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyCrankTabhostSmsReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFindActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFlowActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFlowFirewallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFlowMonitorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFlowSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyFlowSortActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptDetectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptNoteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyInterceptSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyPersonalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyQrCodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.safety.activity.SafetyQrCodeSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- *************************************360安全卫士******************************************* -->
+        
+        <!-- **************************************大众点评********************************************* -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingCategoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingCityListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingGuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingMoreActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.dianping.activity.DianpingWelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- **************************************大众点评********************************************* -->
+        
+        <!-- **************************************华为商城********************************************* -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.vmall.activity.VmallMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.vmall.activity.VmallCartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.vmall.activity.VmallDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.vmall.activity.VmallSearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.page.vmall.activity.VmallWelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <!-- **************************************华为商城********************************************* -->
+                
+        <activity
+            android:name="com.zhaoqy.app.demo.notification.NotificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notification.NotificationCustomAcitivty"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notification.NotificationProgressAcitivty"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.dialog.DialogActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.ListViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.custom.activity.ListView0Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.custom.activity.ListView1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.custom.activity.ListView2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.pulltozoom.activity.PullToZoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.pulltozoom.activity.PullToZoomListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.pulltozoom.activity.PullToZoomScrollActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.listview.paging.activity.PagingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideZakerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideSceneActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideViewPagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideShowTimeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.guide.GuideJDActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        
+       <!-- **************************************记事本********************************************* -->
+       
+       <activity
+            android:name="com.zhaoqy.app.demo.notebook.NoteBookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+       
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.NotesMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/NoteTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.NotesEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/NoteTheme" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/text_note" />
+                <data android:mimeType="vnd.android.cursor.item/call_note" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/text_note" />
+                <data android:mimeType="vnd.android.cursor.item/call_note" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/milletnotes_searchable" />
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.NotesAlarmActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" >
+        </activity>
+
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.NotesSettingsActivity"
+            android:label="@string/milletnote_settings_title"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light" >
+        </activity>
+        
+        <provider
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.db.NotesProvider"
+            android:authorities="com.zhaoqy.app.demo.notebook.milletnotes.db.NotesProvider"
+            android:multiprocess="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.view.NoteWidgetProvider_2x"
+            android:label="@string/milletnote_app_widget2x2" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/milletnotes_widget_2x_info" />
+        </receiver>
+        <receiver
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.view.NoteWidgetProvider_4x"
+            android:label="@string/milletnote_app_widget4x4" >
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.intent.action.PRIVACY_MODE_CHANGED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/milletnotes_widget_4x_info" />
+        </receiver>
+
+        <receiver android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.AlarmInitReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.activity.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+
+        <service
+            android:name="com.zhaoqy.app.demo.notebook.milletnotes.gtask.GTaskSyncService"
+            android:exported="false" >
+        </service>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.zhaoqy.app.demo.notebook.milletnotes.activity.NotesEditActivity" />
+        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.pwdnotes.activity.NotesLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.pwdnotes.activity.NotesSetPwdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.pwdnotes.activity.NotesMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.calendar.activity.CalendarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.windnotes.activity.WindAddActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.windnotes.activity.WindMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.windnotes.activity.WindNoteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.windnotes.activity.WindWelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillAddBillActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillAddNoteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillLookNoteActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillRegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillSelectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/billnote_dialog"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.notebook.billnotes.activity.BillTransferActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <!-- **************************************记事本********************************************* -->
+        
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.textview.TextViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.textview.typetextview.TypeTextActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.textview.badgecustom.BadgeCustomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.textview.badgejar.BadgeJarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"  >
+        </activity>
+        
+        <activity
+            android:name="com.zhaoqy.app.demo.textview.dynamic.DynamicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"  >
+        </activity>
+       
+
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="4BXasHp4pOqHRPwr5rIbUzuc" />
+    </application>
+
+</manifest>

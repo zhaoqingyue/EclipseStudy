@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/selectfriends_search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_search_bg"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/selectfriends_search"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/menu_kaixin_edit_input_bg"
+                android:drawableLeft="@drawable/menu_kaixin_search_icon"
+                android:drawablePadding="8dip"
+                android:hint="输入拼音首字母查找"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/selectfriends_display"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/selectfriends_search_layout"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/menu_kaixin_dividing_line"
+            android:listSelector="#00000000" />
+
+        <com.zhaoqy.app.demo.menu.kaixin.view.LetterListView
+            android:id="@+id/selectfriends_letter"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:baselineAligned="false"
+        android:background="@drawable/menu_kaixin_image_bg" >
+
+        <HorizontalScrollView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:fadingEdge="horizontal"
+            android:fadingEdgeLength="30dip"
+            android:fillViewport="true"
+            android:orientation="horizontal"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/selectfriends_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="0dip"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>

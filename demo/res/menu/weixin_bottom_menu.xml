@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 自定义搜索按钮视图 -->
+    <item
+        android:id="@+id/menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="ifRoom"
+        android:title="@string/weixin_menu_search"/>
+    
+    <!-- 发起群聊 -->
+    <item
+        android:id="@+id/menu_group_chat"
+        android:icon="@drawable/weixin_menu_group"
+        android:title="@string/weixin_menu_groupchat"/>
+    
+    <!-- 添加朋友 -->
+    <item
+        android:id="@+id/menu_add_friend"
+        android:icon="@drawable/weixin_menu_addfriend"
+        android:title="@string/weixin_menu_addfriend"/>
+    
+    <!-- 扫一扫 -->
+    <item
+        android:id="@+id/menu_scan"
+        android:icon="@drawable/weixin_menu_sao"
+        android:title="@string/weixin_menu_qrcode"/>
+    
+    <!-- 意见与反馈 -->
+    <item
+        android:id="@+id/menu_feedback"
+        android:icon="@drawable/weixin_menu_feedback"
+        android:title="@string/weixin_menu_feedback"/>
+
+</menu>

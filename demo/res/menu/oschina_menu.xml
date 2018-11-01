@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/oschina_menu_user"
+        android:icon="@drawable/oschina_menu_login"
+        android:title="@string/main_menu_login"/>
+    <item
+        android:id="@+id/oschina_menu_about"
+        android:icon="@drawable/oschina_menu_about"
+        android:title="@string/main_menu_about"/>
+    <item
+        android:id="@+id/oschina_menu_setting"
+        android:icon="@drawable/oschina_menu_setting"
+        android:title="@string/main_menu_setting"/>
+    <item
+        android:id="@+id/oschina_menu_exit"
+        android:icon="@drawable/oschina_menu_exit"
+        android:title="@string/main_menu_exit"/>
+
+</menu>

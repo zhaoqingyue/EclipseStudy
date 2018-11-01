@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/viewpage0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_facebook_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_google_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Google"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_linkedin_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Linkedin"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/viewpage3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_myspace_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Myspace"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:visibility="visible"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            android:id="@+id/viewpage4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_twitter_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Twitter"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_wordpress_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Wordpress"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpage6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_facebook_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/viewpage7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/animation_custom_circleimage_google_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Google"
+                android:textColor="@color/black1"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

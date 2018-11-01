@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/id_weixin_bar"
+        layout="@layout/view_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_weixin_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include 
+        android:id="@+id/id_weixin_bottom"
+        layout="@layout/view_weixin_bottom" />
+
+</LinearLayout>

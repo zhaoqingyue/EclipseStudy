@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/view_title" />
+
+    <ListView
+        android:id="@+id/chat_display"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/menu_kaixin_write_bg"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/chat_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_chat_edit_face_selector" />
+
+        <EditText
+            android:id="@+id/chat_content"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_kaixin_edit_input_bg"
+            android:hint="回复..."
+            android:maxLines="2"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_chat_edit_send_selector"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#888888" />
+    </LinearLayout>
+
+</LinearLayout>

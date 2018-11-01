@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/city_list_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/city_list_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/activity_city_list_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/dianping_login_back"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="选择"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="11dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/city_list_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/city_list_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianping_category_tab_left_selector"
+                android:button="@null"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="全部"
+                android:textColor="@color/dianping_category_tab_color_selector" />
+
+            <RadioButton
+                android:id="@+id/city_list_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianping_category_tab_right_selector"
+                android:button="@null"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="海外"
+                android:textColor="@color/dianping_category_tab_color_selector" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/city_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_list_rl"
+        android:background="#f0f0f0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dianping_city_search_bg"
+            android:drawableLeft="@drawable/dianping_find_search"
+            android:drawablePadding="4dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="3dp"
+            android:text="城市名、拼音首字母..."
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/city_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city_list_ll" />
+
+    <com.zhaoqy.app.demo.page.dianping.view.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/city_list_rl" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip"
+        android:visibility="gone" />
+
+</RelativeLayout>

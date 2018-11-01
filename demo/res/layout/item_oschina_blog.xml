@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" 
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="7dip">   
+
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content">
+        
+        <ImageView 
+            android:id="@+id/blog_listitem_documentType"
+	      	android:layout_width="14.0dip" 
+	        android:layout_height="14.0dip"
+	        android:layout_marginRight="2dip"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="@string/app_name" />
+    
+	    <TextView android:id="@+id/blog_listitem_title" 
+	        android:layout_width="fill_parent" 
+	     	android:layout_height="wrap_content"
+	     	android:textStyle="bold"
+	     	android:textSize="15sp"
+	     	android:textColor="#ff000000"
+	     	android:singleLine="true"/>
+	    
+   	</LinearLayout>
+
+    <LinearLayout 
+    	android:orientation="horizontal" 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip">   
+                
+        <TextView android:id="@+id/blog_listitem_author"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginRight="2dip" 
+           	android:textSize="12sp"
+            android:textColor="#ff9da19e"/>
+        
+       	<TextView android:id="@+id/blog_listitem_date"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content"
+           	android:textSize="12sp"
+            android:textColor="#ff9da19e"/>
+            
+	    <ImageView 
+	      	android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/oschina_comment_count_icon"
+	        android:contentDescription="@string/app_name" />
+	        
+       	<TextView android:id="@+id/blog_listitem_commentCount"  
+    		android:layout_width="wrap_content" 
+           	android:layout_height="wrap_content" 
+           	android:layout_marginLeft="3dip"
+           	android:textSize="12sp"
+            android:textColor="#ff9da19e"/>
+       	
+    </LinearLayout>
+
+</LinearLayout> 

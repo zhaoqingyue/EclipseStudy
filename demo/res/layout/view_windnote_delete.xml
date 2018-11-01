@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/gone_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gone_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/windnote_name"
+            android:padding="1dp"
+            android:src="@drawable/windnote_add_yes" />
+
+        <Button
+            android:id="@+id/delete_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:text="@string/windnote_delete_yes"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/windnote_name"
+            android:padding="1dp"
+            android:src="@drawable/windnote_add_no" />
+
+        <Button
+            android:id="@+id/delete_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/transparent"
+            android:text="@string/windnote_delete_no"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </TableRow>
+
+</TableLayout>

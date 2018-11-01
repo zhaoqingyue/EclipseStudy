@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.dip"
+        android:background="@drawable/oschina_head_bg"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip" >
+
+        <TextView
+            style="@style/oschina_detail_head_title"
+            android:text="系统设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/icon_back"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="back" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/setting_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

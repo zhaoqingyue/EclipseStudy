@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/windows_color"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/friends_search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_kaixin_search_bg"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/friends_search"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_margin="8dip"
+                android:layout_weight="1"
+                android:background="@drawable/menu_kaixin_edit_input_bg"
+                android:drawableLeft="@drawable/menu_kaixin_search_icon"
+                android:drawablePadding="8dip"
+                android:hint="输入拼音首字母查找"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/friends_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friends_search_layout"
+            android:padding="8dip"
+            android:text="最近0名好友过生日"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/friends_display"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/friends_birthday"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/menu_kaixin_dividing_line"
+            android:listSelector="#00000000" />
+
+        <com.zhaoqy.app.demo.menu.kaixin.view.LetterListView
+            android:id="@+id/friends_letter"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <Button
+            android:id="@+id/friends_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_kaixin_bottom_left_selected"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_kaixin_bottom_separation" />
+
+        <Button
+            android:id="@+id/friends_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_kaixin_bottom_right"
+            android:paddingLeft="20dip"
+            android:text="公共主页"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
